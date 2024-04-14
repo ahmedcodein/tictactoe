@@ -93,3 +93,44 @@ main {
     height: 3.75em;
     text-align: center;
 }
+
+/* The Score Board Section style goes here */
+#score-board {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:8rem;
+    align-items: center;
+}
+
+#scores {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+#player-o {
+    margin-left: 3em;
+    text-decoration: underline;
+}
+
+#player-x {
+    margin-right: 3em;
+    text-decoration: underline;
+}
+
+#reset-buttons {
+    border: 1px solid #040B03;
+    display: flex;
+    flex-direction: column; /* present the buttons vertically */
+}
+
+#round-reset {
+    margin: 1em;
+}
+
+#game-reset {
+    margin: 1em;
+}
