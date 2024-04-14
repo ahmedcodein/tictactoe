@@ -16,3 +16,15 @@ body {
     flex-direction: column;
     width: 100vw;
 }
+
+/* The header style goes here */
+header {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    width: 100vw;
+    text-align: center;
+}
+
+header h1 {
+    margin: 1px;
+}
