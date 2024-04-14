@@ -37,19 +37,19 @@ main {
 }
 
 /* The Setup Board Section style goes here */
-h2 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 130%;
-    text-align: center;
-}
-
 #setup-board {
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: 18vh;
     align-items: center;
+}
+
+#dash-board {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 130%;
+    text-align: center;
 }
 
 .players-container {
