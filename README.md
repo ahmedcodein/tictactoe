@@ -1,110 +1,140 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Project Name
 
-Welcome USER_NAME,
+## 1. Introduction
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Briefly introduce my project here. What does it aim to do? Who is it for?
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## 2. Development Process
 
-## Gitpod Reminders
+Discuss how and why i choose particular project.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### 2.1. Project research and selection criteria
 
-`python3 -m http.server`
+Explain why I selected this project.
 
-A blue button should appear to click: _Make Public_,
+### 2.2. Project Objective
 
-Another blue button should appear to click: _Open Browser_.
+Describe the main goal of the project.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#### 2.2.1. Website Owner Objectives
 
-A blue button should appear to click: _Make Public_,
+List the objectives for the website owner.
 
-Another blue button should appear to click: _Open Browser_.
+#### 2.2.2. Website Visitor Objectives
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Detail what the visitors of the website should be able to achieve.
 
-To log into the Heroku toolbelt CLI:
+### 2.3. Design Concept
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### 2.3.1. Website Requirements
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+Outline the key requirements for the website.
 
-------
+#### 2.3.2. Structure
 
-## Release History
+Describe the structure of the website.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### 2.3.3. Wireframes
 
-**September 20 2023:** Update Python version to 3.9.17.
+Provide links to or embed images of the wireframes for:
+- Smartphone Version
+- Tablet Version
+- Desktop Version
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+#### 2.3.4. Colour
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Talk about the colour scheme of the website.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+#### 2.3.5. Fonts
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+Detail the fonts used in the project.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## 3. Execution
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### 3.1. Technologies Used
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+List the technologies and tools used in the project.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### 3.2. Website Verification and Validation
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+#### 3.2.1. Verification Test
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+Describe the verification tests conducted.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+#### 3.2.2. Validation Test
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+List the validation tests and their outcomes.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+#### 3.2.3. HTML Validation
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Explain the process and results of HTML validation.
 
-------
+#### 3.2.4. CSS Validation
 
-## FAQ about the uptime script
+Detail CSS validation process and results.
 
-**Why have you added this script?**
+#### 3.2.5. JavaScript Validation
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Discuss JavaScript validation.
 
-**How will this affect me?**
+#### 3.2.6. Accessibility
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+Describe how accessibility was ensured.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+#### 3.2.7. Lighthouse Validation
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+Provide details and results of Lighthouse validation.
 
-**So….?**
+#### 3.2.8. Device Testing
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+Explain how device testing was conducted and the results.
 
-**Can I opt out?**
+#### 3.2.9. Browser Compatibility
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+Detail the browser compatibility checks that were performed.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### 3.3. Bugs
 
-**Anything more?**
+#### 3.3.1. Fixed Bugs
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+List the bugs that were identified and fixed.
 
----
+#### 3.3.2. Unfixed Bugs
 
-Happy coding!
+Mention any bugs that have not yet been fixed.
+
+## 4. Deployment
+
+Explain how the website is deployed and any steps needed to deploy it to a new environment.
+
+## 5. Features
+
+### 5.1. Header
+
+Describe the header component of the website.
+
+### 5.2. Main Content
+
+Detail the main content area of the website.
+
+### 5.3. Footer
+
+Describe the footer component.
+
+## 6 Credits
+
+### 6.1 References
+
+List any references used in the development of the project.
+
+### 6.2. Content
+
+Credit the sources of website content.
+
+### 6.3. Tools
+
+List the tools used in the project.
+
+### 6.4. Acknowledgement
+
+Acknowledge any help received during the project.
