@@ -105,20 +105,10 @@ main {
 
 #scores {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100vw;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
-}
-
-#player-o {
-    margin-left: 3em;
-    text-decoration: underline;
-}
-
-#player-x {
-    margin-right: 3em;
-    text-decoration: underline;
 }
 
 #reset-buttons {
