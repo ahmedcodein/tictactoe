@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (!aPlayerClickedEvent) {
                     // Prevents any more player's selection
                     aPlayerClickedEvent = true;
-                    console.log(players[i].innerText)
+                    callback(players[i].innerText)
                 }
             });
         }
