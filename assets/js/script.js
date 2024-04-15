@@ -98,5 +98,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function resetGameFunction() {
 
+        // Reset all the manupulated inputs to their defult conditions
+        for (let i = 0; i < Spots.length; i++) {
+            Spots[i].innerText = '';
+        }
+        document.getElementById("dash-board").innerText = "Choose either of the character to start the game!";
+        playingSpots.fill(null)
+        alert("The game is reset")
+        // re initiate the game on the default inputs
+        initiateTheGame();
+
     }
 });
