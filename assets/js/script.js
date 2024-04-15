@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let roundReset = document.getElementById('round-reset'); // declare a round reset variable
     let gameReset = document.getElementById('game-reset'); // declare a resut button variable
 
+    // Add event listener to the resets buttons
+    resetRound.addEventListener('click', resetRoundFunction);
+    resetGame.addEventListener('click', resetGameFunction);
+
     initiateTheGame(); // Game is loaded and is waiting the user to choose either of the players to strart the game with
 
     /**This function initiate the Game once the DOM is loaded.
