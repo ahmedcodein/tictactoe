@@ -58,26 +58,34 @@ document.addEventListener("DOMContentLoaded", function () {
         return secondPlayer
     }
 
-    function fillTheSpots(count, firstPlayer, secondPlayer, Spots, playingSpots, callback) {
-        for (let i = 0; i < (Spots.length); i++) {
-            Spots[i].addEventListener('click', function () {
-                count++ // The count starts at -1 and becomes 0 with the first click
-                // If the count is even, then include the firstPlayer
-                // if the spot is occupied, do not overright
+    function fillTheSpots(count, firstPlayer, secondPlayer, gameSpots, playingSpots, callback) {
+        console.log(count);
+
+        // declare an array of 
+        let listenerStorage = [];
+
+        for (let i = 0; i < Spots.length; i++) {
+            let filledInSpotsListener = function () {
+                count++;
+
                 if (count % 2 === 0 && !playingSpots[i]) {
                     Spots[i].innerText = `${firstPlayer}`;
                     playingSpots[i] = firstPlayer;
                     document.getElementById("dash-board").innerText = `It is ${secondPlayer}'s turn`;
-                    // If the count is odd, then include the secondPlayer
-                    // if the spot is occupied, do not overright
+
                 } else if (count % 2 !== 0 && !playingSpots[i]) {
                     Spots[i].innerText = `${secondPlayer}`;
                     playingSpots[i] = secondPlayer;
                     document.getElementById("dash-board").innerText = `It is ${firstPlayer}'s turn`;
                 }
-                callback(playingSpots)
-            });
+                callback(playingSpots);
+            };
+
+
+            Spots[i].addEventListener('click', filledInSpotsListener);
+            listenerStorage.push(filledInSpotsListener);
         }
+        listenedToCharactor = listenerStorage;
     }
 
     function gameResultEvaluation() {
@@ -100,6 +108,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Reset all the manupulated inputs to their defult conditions
         for (let i = 0; i < Spots.length; i++) {
+            // Remove event listeners
+            Spots[i].removeEventListener('click', listenedToCharactor[i]);
             Spots[i].innerText = '';
         }
         document.getElementById("dash-board").innerText = "Choose either of the character to start the game!";
