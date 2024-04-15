@@ -10,4 +10,40 @@ document.addEventListener("DOMContentLoaded", function () {
     let playingSpots = Array(Spots.length).fill(null); // Create an empty
     let roundReset = document.getElementById('round-reset'); // declare a round reset variable
     let gameReset = document.getElementById('game-reset'); // declare a resut button variable
-})
+
+    function initiateTheGame() {
+
+    }
+
+    function startTheGame() {
+
+    }
+
+    function playersDeclaration(){
+
+    }
+
+    function fillTheSpots() {
+
+    }
+
+    function gameResultEvaluation() {
+
+    }
+
+    function resultAnnoucement() {
+
+    }
+
+    function counterEvaluator() {
+
+    }
+
+    function resetRoundFunction() {
+
+    }
+
+    function resetGameFunction() {
+
+    }
+});
