@@ -20,18 +20,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // aPlayerClickedEvent variable is a gating mechanismim to prevent new player selection
         let aPlayerClickedEvent = false;
-        startTheGame(players,aPlayerClickedEvent, function(firstPlayer) {
-            let secondPlayer = playersDeclaration(firstPlayer)
+        let count = -1; // Used to count the number of clicks when the filltheSpots function is called
+        startTheGame(players, aPlayerClickedEvent, function (firstPlayer) {
+            let secondPlayer = playersDeclaration(firstPlayer);
+            fillTheSpots(count, firstPlayer, secondPlayer, Spots, playingSpots, function (filledInSpots) {
+
+            });
         });
 
     }
     /**This function listens to the players buttons. Once either of the players clicked
      * it declars the first player character.
      */
-    function startTheGame(players,aPlayerClickedEvent, callback) {
+    function startTheGame(players, aPlayerClickedEvent, callback) {
         // Check which players buttons was fired
         for (let i = 0; i < players.length; i++) {
-            players[i].addEventListener('click', function() {
+            players[i].addEventListener('click', function () {
                 if (!aPlayerClickedEvent) {
                     // Prevents any more player's selection
                     aPlayerClickedEvent = true;
@@ -43,15 +47,33 @@ document.addEventListener("DOMContentLoaded", function () {
     /** This function declare the second player by observing the charactor of the first player
      * It also announce the character turn on the dashboard once, the first charater is choosen
      */
-    function playersDeclaration(firstPlayer){
+    function playersDeclaration(firstPlayer) {
         // if O character is clicked, then O is the first player and X is the second player and vise versa
         firstPlayer === "O" ? secondPlayer = "X" : secondPlayer = "O";
         document.getElementById("dash-board").innerText = `It is ${firstPlayer}'s turn`;
         return secondPlayer
     }
 
-    function fillTheSpots() {
-
+    function fillTheSpots(count, firstPlayer, secondPlayer, Spots, playingSpots, callback) {
+        for (let i = 0; i < (Spots.length); i++) {
+            Spots[i].addEventListener('click', function () {
+                count++ // The count starts at -1 and becomes 0 with the first click
+                // If the count is even, then include the firstPlayer
+                // if the spot is occupied, do not overright
+                if (count % 2 === 0 && !playingSpots[i]) {
+                    Spots[i].innerText = `${firstPlayer}`;
+                    playingSpots[i] = firstPlayer;
+                    document.getElementById("dash-board").innerText = `It is ${secondPlayer}'s turn`;
+                    // If the count is odd, then include the secondPlayer
+                    // if the spot is occupied, do not overright
+                } else if (count % 2 !== 0 && !playingSpots[i]) {
+                    Spots[i].innerText = `${secondPlayer}`;
+                    playingSpots[i] = secondPlayer;
+                    document.getElementById("dash-board").innerText = `It is ${firstPlayer}'s turn`;
+                }
+                callback(playingSpots)
+            });
+        }
     }
 
     function gameResultEvaluation() {
