@@ -20,9 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // aPlayerClickedEvent variable is a gating mechanismim to prevent new player selection
         let aPlayerClickedEvent = false;
-
         startTheGame(players,aPlayerClickedEvent, function(firstPlayer) {
-
+            let secondPlayer = playersDeclaration(firstPlayer)
         });
 
     }
@@ -41,9 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     }
-
-    function playersDeclaration(){
-
+    /** This function declare the second player by observing the charactor of the first player
+     * It also announce the character turn on the dashboard once, the first charater is choosen
+     */
+    function playersDeclaration(firstPlayer){
+        // if O character is clicked, then O is the first player and X is the second player and vise versa
+        firstPlayer === "O" ? secondPlayer = "X" : secondPlayer = "O";
+        document.getElementById("dash-board").innerText = `It is ${firstPlayer}'s turn`;
+        return secondPlayer
     }
 
     function fillTheSpots() {
