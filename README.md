@@ -22,15 +22,15 @@ Among the 10 candidates, the author chooses to move with Tic Tac Toe due to thre
 
 ### 2.2. Project Objective
 
-Describe the main goal of the project.
+The main anticipated objective of developing this game is to become familiar with JavaScript programming and its interactions with HTML DOM.
 
 #### 2.2.1. Website Owner Objectives
 
-List the objectives for the website owner.
+The owner objective is to build an online game that is easy to understand, interface with and play combined with some sort of challenge presented by score accumulation.
 
 #### 2.2.2. Website Visitor Objectives
 
-Detail what the visitors of the website should be able to achieve.
+User objective converges with the site owner's in the sense of finding an online game that is easy to interact with in addition to the provision of some challenge in playing the game by accumulating score when played with a friend. 
 
 ### 2.3. Design Concept
 
