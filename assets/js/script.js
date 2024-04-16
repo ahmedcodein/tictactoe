@@ -120,6 +120,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    function resultDrawAnnouncement() {
+
+    }
+
+    function resultWinnerAnnouncement() {
+        
+    }
+
     function counterEvaluator() {
 
     }
