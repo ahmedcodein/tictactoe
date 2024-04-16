@@ -121,10 +121,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function resultDrawAnnouncement() {
+        document.getElementById("dash-board").innerText = `It is draw`;
 
     }
 
     function resultWinnerAnnouncement() {
+        document.getElementById("dash-board").innerText = `${winner}'s won this round!`;
         
     }
 
