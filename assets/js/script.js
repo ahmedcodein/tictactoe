@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("It is draw")
         }
 
-        if (typeof winner === "string") {
+        if (winnerFound) {
             resultWinnerAnnouncement(winner);
             console.log(winner)
         }
@@ -130,6 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function counterEvaluator() {
+
 
     }
 
