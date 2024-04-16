@@ -5,17 +5,17 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Page is loaded")
 
     // Declare inputs to the game, connect them to the DOM where appropriate
-    let players = Array.from(document.getElementsByClassName('players')); // Convert to an array
-    let Spots = Array.from(document.getElementsByClassName('spot')); // Convert to an array
-    let playingSpots = Array(Spots.length).fill(null); // Create an empty array
-    let roundReset = document.getElementById('round-reset'); // declare a round reset variable
-    let gameReset = document.getElementById('game-reset'); // declare a resut button variable
+    let players = Array.from(document.getElementsByClassName('players'));
+    let Spots = Array.from(document.getElementsByClassName('spot'));
+    let playingSpots = Array(Spots.length).fill(null);
+    let roundReset = document.getElementById('round-reset');
+    let gameReset = document.getElementById('game-reset'); 
 
-    // Add event listener to the resets buttons
+
     roundReset.addEventListener('click', resetRoundFunction);
     gameReset.addEventListener('click', resetGameFunction);
 
-    initiateTheGame(); // Game is loaded and is waiting the user to choose either of the players to start the game with
+    initiateTheGame(); 
 
     /**This function initiate the Game once the DOM is loaded.
      * It waits then the user to click on one of the users to start the game.
@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
      * It also announce the character turn on the dashboard once, the first character is chosen
      */
     function playersDeclaration(firstPlayer) {
-        // if O character is clicked, then O is the first player and X is the second player and vice versa
         firstPlayer === "O" ? secondPlayer = "X" : secondPlayer = "O";
         document.getElementById("dash-board").innerText = `It is ${firstPlayer}'s turn`;
         return secondPlayer
@@ -80,11 +79,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 callback(playingSpots);
             };
 
-
             Spots[i].addEventListener('click', filledInSpotsListener);
             listenerStorage.push(filledInSpotsListener);
         }
-        listenedToCharactor = listenerStorage;
+        listenedToCharacter = listenerStorage;
     }
 
     function gameResultEvaluation(filledInSpots) {
@@ -141,14 +139,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function resetGameFunction() {
 
-        // Fix error when preseeing reset before selecting either of the characters
-        if (typeof listenedToCharactor !== "object") {
+        // Fix error when pressing reset before selecting either of the characters
+        if (typeof listenedToCharacter !== "object") {
             return
-        } else { 
-            // Reset all the manipulated inputs to their default conditions
+        } else {
             for (let i = 0; i < Spots.length; i++) {
-                // Remove event listeners
-                Spots[i].removeEventListener('click', listenedToCharactor[i]);
+                Spots[i].removeEventListener('click', listenedToCharacter[i]);
                 Spots[i].innerText = '';
             }
         }
