@@ -2,19 +2,17 @@
 
 ## 1. Introduction
 
-Tic Tac Toe is an ancient board game. According to Wikipedia, the game goes back to 1300 BC (wikipedia). The game board is divided into 3-by-3 boxes. The game is designed to be played by two persons. Each person is designated either of two characters/symbols to play with. The players then take turns by placing the symbols in one of the nine boxes. Either player is able to place players designated symbols on three boxes arranged horizontally, vertically or diagonally is considered the game winner. In case, none of the players is unable to do so, the game is then a tie.
+Tic Tac Toe game is an ancient board game. According to Wikipedia, the game goes back to 1300 BC. The game board is divided into 3-by-3 boxes. The game is designed to be played by two persons. Each person is designated either of two characters/symbols to play with. The players then take turns by placing the symbols in one of the nine boxes. Either player is able to place the players designated symbol on three boxes arranged horizontally, vertically or diagonally is considered the game winner. In case none of the players is unable to do so, the game is then a tie.
 
 ## 2. Development Process
 
 The process followed by the author consists of five phases. These phases are presented below with a detailed account is presented in the subsequent sections.
 
-Discuss how and why i choose particular project.
 
 ### 2.1. Project research and selection criteria
 
-Project Research and Selection Criteria
 In the research phase the author has conducted a brief search on easy to implement games for the purpose of learning HTML, CSS and JavaScript together. Many resources can be found, the author however settled on the following article: https://www.codingnepalweb.com/best-javascript-games-for-beginners/. 
-Among the 10 candidates, the author chooses to move with Tic Tac Toe due to three main reason:
+Among the 10 candidates presented in the article, the author chooses to move with Tic Tac Toe game due to three main reasons:
 1.	Simple User Interface with minimum graphics
 2.	Average logic complexity
 3.	Good enough of interactions between the DOM and the JavaScript to become familiar with the concept of DOM manipulation.
