@@ -112,10 +112,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let drawCondition = filledInSpots.filter(item => item !== null).length === filledInSpots.length;
         if (!winnerFound && drawCondition) {
+            resultDrawAnnouncement();
             console.log("It is draw")
         }
 
         if (typeof winner === "string") {
+            resultWinnerAnnouncement(winner);
             console.log(winner)
         }
     }
@@ -125,9 +127,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-    function resultWinnerAnnouncement() {
+    function resultWinnerAnnouncement(winner) {
         document.getElementById("dash-board").innerText = `${winner}'s won this round!`;
-        
     }
 
     function counterEvaluator() {
