@@ -120,10 +120,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    function resultAnnoucement() {
-
-    }
-
     function counterEvaluator() {
 
     }
