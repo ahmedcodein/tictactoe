@@ -141,19 +141,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function resetGameFunction() {
 
-
-        console.clear()
-        // Reset all the manipulated inputs to their default conditions
-        for (let i = 0; i < Spots.length; i++) {
-            // Remove event listeners
-            Spots[i].removeEventListener('click', listenedToCharactor[i]);
-            Spots[i].innerText = '';
+        // Fix error when preseeing reset before selecting either of the characters
+        if (typeof listenedToCharactor !== "object") {
+            return
+        } else { 
+            // Reset all the manipulated inputs to their default conditions
+            for (let i = 0; i < Spots.length; i++) {
+                // Remove event listeners
+                Spots[i].removeEventListener('click', listenedToCharactor[i]);
+                Spots[i].innerText = '';
+            }
         }
+
         document.getElementById("dash-board").innerText = "Choose either of the characters to start the game!";
         playingSpots.fill(null)
         alert("The game is reset")
         // re initiate the game on the default inputs
         initiateTheGame();
-
     }
 });
