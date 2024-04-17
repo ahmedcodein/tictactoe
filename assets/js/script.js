@@ -47,12 +47,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     callback(players[i].innerText)
                 }
             }
-            players[i].addEventListener('click', playersListenerHandler);
+            players[i].addEventListener('click', userListenerHandler);
             userListenerStorage.push(userListenerHandler)
         }
         listenedToUser = userListenerStorage;
     }
-    
+
     /** This function declares the second player by observing the character of the first player
      * It also announce the character turn on the dashboard once, the first character is chosen
      */
