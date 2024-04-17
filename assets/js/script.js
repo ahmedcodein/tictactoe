@@ -116,6 +116,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function resultDrawAnnouncement() {
         document.getElementById("dash-board").innerText = `It is draw`;
+        if (typeof listenedToCharacter !== "object") {
+            return
+        } else {
+            for (let i = 0; i < Spots.length; i++) {
+                Spots[i].removeEventListener('click', listenedToCharacter[i]);
+            }
+        }
+        for (let i = 0; i < players.length; i++) {
+            players[i].removeEventListener('click', listenedToUser[i]);
+        }
+        playingSpots.fill(null);
+        setTimeout(function () {
+            document.getElementById("dash-board").innerText = "Choose who's first for the next round!";
+            for (let i = 0; i < Spots.length; i++) {
+                Spots[i].innerText = '';
+            }
+            initiateTheGame();
+        }, 3000);
 
     }
 
