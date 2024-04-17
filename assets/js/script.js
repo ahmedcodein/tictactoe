@@ -111,12 +111,10 @@ document.addEventListener("DOMContentLoaded", function () {
         let drawCondition = filledInSpots.filter(item => item !== null).length === filledInSpots.length;
         if (!winnerFound && drawCondition) {
             resultDrawAnnouncement();
-            console.log("It is draw")
         }
 
         if (winnerFound) {
             resultWinnerAnnouncement(winner);
-            console.log(winner)
         }
     }
 
