@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let playingSpots = Array(Spots.length).fill(null);
     let roundReset = document.getElementById('round-reset');
     let gameReset = document.getElementById('game-reset');
+    const resultStorage = Array(0);
 
 
     roundReset.addEventListener('click', resetRoundFunction);
@@ -28,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         startTheGame(players, aPlayerClickedEvent, function (firstPlayer) {
             let secondPlayer = playersDeclaration(firstPlayer);
             fillTheSpots(count, firstPlayer, secondPlayer, Spots, playingSpots, function (filledInSpots) {
-                gameResultEvaluation(filledInSpots);
+                gameResultEvaluation(resultStorage, filledInSpots);
 
             });
         });
@@ -85,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
         listenedToCharacter = listenerStorage;
     }
 
-    function gameResultEvaluation(filledInSpots) {
+    function gameResultEvaluation(resultStorage, filledInSpots) {
         let winner
         let winnerFound = false;
         const winningCombinations = [
@@ -114,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (winnerFound) {
-            resultWinnerAnnouncement(winner);
+            resultWinnerAnnouncement(resultStorage, winner);
         }
     }
 
@@ -123,8 +124,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-    function resultWinnerAnnouncement(winner) {
+    function resultWinnerAnnouncement(resultStorage, winner) {
         document.getElementById("dash-board").innerText = `${winner}'s won this round!`;
+        resultStorage.push(winner);
+        document.getElementById('counter-o').innerText = `Player O: ${resultStorage.filter(item => item === "O").length}`;
+        document.getElementById('counter-x').innerText = `Player X: ${resultStorage.filter(item => item === "X").length}`;
     }
 
     function counterEvaluator() {
