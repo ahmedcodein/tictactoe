@@ -131,11 +131,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('counter-x').innerText = `Player X: ${resultStorage.filter(item => item === "X").length}`;
     }
 
-    function counterEvaluator() {
-
-
-    }
-
     function resetRoundFunction() {
         if (typeof listenedToCharacter !== "object") {
             return
