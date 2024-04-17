@@ -137,6 +137,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 Spots[i].innerText = '';
             }
         }
+        for (let i = 0; i < players.length; i++) {
+            players[i].removeEventListener('click', listenedToUser[i]);
+        }
         document.getElementById("dash-board").innerText = "Choose either of the characters to start the game!";
         playingSpots.fill(null);
         initiateTheGame();
