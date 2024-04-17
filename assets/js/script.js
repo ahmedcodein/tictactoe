@@ -39,16 +39,21 @@ document.addEventListener("DOMContentLoaded", function () {
      * it declares the first player character.
      */
     function startTheGame(players, aPlayerClickedEvent, callback) {
+
+        let userListenerStorage = []
         // Check which players buttons was fired
         for (let i = 0; i < players.length; i++) {
-            players[i].addEventListener('click', function () {
+            let userListenerHandler = function () {
                 if (!aPlayerClickedEvent) {
                     // Prevents any more player's selection
                     aPlayerClickedEvent = true;
                     callback(players[i].innerText)
                 }
-            });
+            }
+            players[i].addEventListener('click', playersListenerHandler);
+            userListenerStorage.push(userListenerHandler)
         }
+        listenedToUser = userListenerStorage;
     }
     /** This function declares the second player by observing the character of the first player
      * It also announce the character turn on the dashboard once, the first character is chosen
@@ -147,7 +152,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function resetGameFunction() {
-
         // Fix error when pressing reset before selecting either of the characters
         if (typeof listenedToCharacter !== "object") {
             return
@@ -156,6 +160,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 Spots[i].removeEventListener('click', listenedToCharacter[i]);
                 Spots[i].innerText = '';
             }
+        }
+        for (let i = 0; i < players.length; i++) {
+            players[i].removeEventListener('click', listenedToUser[i]);
         }
         resultStorage = Array(0);
         document.getElementById('counter-o').innerText = `Player O: ${resultStorage.filter(item => item === "O").length}`;
