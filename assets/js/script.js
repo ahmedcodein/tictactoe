@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let Spots = Array.from(document.getElementsByClassName('spot'));
     let playingSpots = Array(Spots.length).fill(null);
     let roundReset = document.getElementById('round-reset');
-    let gameReset = document.getElementById('game-reset'); 
+    let gameReset = document.getElementById('game-reset');
 
 
     roundReset.addEventListener('click', resetRoundFunction);
     gameReset.addEventListener('click', resetGameFunction);
 
-    initiateTheGame(); 
+    initiateTheGame();
 
     /**This function initiate the Game once the DOM is loaded.
      * It waits then the user to click on one of the users to start the game.
@@ -135,7 +135,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function resetRoundFunction() {
+        if (typeof listenedToCharacter !== "object") {
+            return
+        } else {
+            for (let i = 0; i < Spots.length; i++) {
+                Spots[i].removeEventListener('click', listenedToCharacter[i]);
+                Spots[i].innerText = '';
+            }
+        }
 
+        document.getElementById("dash-board").innerText = "Choose either of the characters to start the game!";
+        playingSpots.fill(null);
+        initiateTheGame();
     }
 
     function resetGameFunction() {
