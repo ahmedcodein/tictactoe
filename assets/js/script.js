@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
         for (let i = 0; i < players.length; i++) {
             players[i].removeEventListener('click', listenedToUser[i]);
         }
-        document.getElementById("dash-board").innerText = "Choose either of the characters to start the game!";
+        document.getElementById("dash-board").innerText = "Choose who's first for the next round!";
         playingSpots.fill(null);
         initiateTheGame();
     }
