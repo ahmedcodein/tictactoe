@@ -157,7 +157,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 Spots[i].innerText = '';
             }
         }
-
+        resultStorage = Array(0);
+        document.getElementById('counter-o').innerText = `Player O: ${resultStorage.filter(item => item === "O").length}`;
+        document.getElementById('counter-x').innerText = `Player X: ${resultStorage.filter(item => item === "X").length}`;
         document.getElementById("dash-board").innerText = "Choose either of the characters to start the game!";
         playingSpots.fill(null)
         alert("The game is reset")
