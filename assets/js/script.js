@@ -105,14 +105,12 @@ document.addEventListener("DOMContentLoaded", function () {
             if (winningConditon) {
                 winner = filledInSpots[a];
                 winnerFound = true;
+                resultWinnerAnnouncement(resultStorage, winner);
             }
         }
         let drawCondition = filledInSpots.filter(item => item !== null).length === filledInSpots.length;
         if (!winnerFound && drawCondition) {
             resultDrawAnnouncement();
-        }
-        if (winnerFound) {
-            resultWinnerAnnouncement(resultStorage, winner);
         }
     }
 
