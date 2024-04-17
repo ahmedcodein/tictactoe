@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let playingSpots = Array(Spots.length).fill(null);
     let roundReset = document.getElementById('round-reset');
     let gameReset = document.getElementById('game-reset');
-    const resultStorage = Array(0);
+    let resultStorage = Array(0);
 
 
     roundReset.addEventListener('click', resetRoundFunction);
