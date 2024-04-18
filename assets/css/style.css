@@ -62,6 +62,7 @@ main {
 }
 
 .players {
+    font-family: inherit;
     margin-bottom: 5px;
     font-size: 40px;
     font-weight: bolder;
@@ -118,10 +119,12 @@ main {
 }
 
 #round-reset {
+    font-family: inherit;
     margin: 1em;
 }
 
 #game-reset {
+    font-family: inherit;
     margin: 1em;
 }
 
