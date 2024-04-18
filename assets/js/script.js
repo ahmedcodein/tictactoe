@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
      * It also announce the character turn on the dashboard once, the first character is chosen
      */
     function playersDeclaration(firstPlayer) {
+        let secondPlayer
         firstPlayer === "O" ? secondPlayer = "X" : secondPlayer = "O";
         document.getElementById("dash-board").innerText = `It is ${firstPlayer}'s turn`;
         return secondPlayer;
