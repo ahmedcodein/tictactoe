@@ -31,6 +31,9 @@ header h1 {
 
 /* The Main style goes here */
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex: 1 0 auto;
     width: 100vw;
     height: 82vh;
@@ -40,7 +43,7 @@ main {
 #setup-board {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: inherit;
     height: 18vh;
     align-items: center;
 }
@@ -55,7 +58,7 @@ main {
 .players-container {
     margin-bottom: 5px;
     display: flex;
-    width: 100vw;
+    width: inherit;
     height: 18vh;
     align-items: center;
     justify-content: space-around;
@@ -111,7 +114,7 @@ main {
 #scores {
     display: flex;
     justify-content: space-around;
-    width: 100vw;
+    width: inherit;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 }
@@ -145,7 +148,7 @@ footer {
     color: #FEFEF0;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: inherit;
     height: 22vh;
     align-items: center;
 }
@@ -175,4 +178,18 @@ li {
     padding-top: .5em;
     font-size: 80%;
     text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+    #setup-board {
+        width: 40vw;
+    }
+    #score-board {
+        width: 40vw;
+    }
+
+    #info {
+        width: 20vw;
+    }
+    
 }
