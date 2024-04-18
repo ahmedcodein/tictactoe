@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
         for (let i = 0; i < players.length; i++) {
             players[i].removeEventListener('click', listenedToUser[i]);
         }
-        document.getElementById("dash-board").innerText = "Choose who's first for the next round!";
+        document.getElementById("dash-board").innerText = "Choose the first to start the round!";
         playingSpots.fill(null);
         initiateTheGame();
     }
