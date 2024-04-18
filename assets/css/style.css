@@ -63,11 +63,15 @@ main {
 
 .players {
     font-family: inherit;
-    margin-bottom: 5px;
+    height: 50px;
+    width: 50px;
     font-size: 40px;
     font-weight: bolder;
-    background-color: #FEFEF0;
-    border: none;
+    font-family: inherit;
+    margin-top: 1.2em;
+    margin-bottom: 1.4em;
+    box-shadow: -5px 5px 0 #E1D4C2;
+    border-radius: 5px;
 }
 
 /* The Game Board Section style goes here */
@@ -118,13 +122,21 @@ main {
 }
 
 #round-reset {
+    font-size: 18px;
+    font-weight: 600;
     font-family: inherit;
-    margin: 1em;
+    margin: .3em;
+    box-shadow: -5px 5px 0 #E1D4C2;
+    border-radius: 5px;
 }
 
 #game-reset {
+    font-size: 18px;
+    font-weight: 600;
     font-family: inherit;
-    margin: 1em;
+    margin: .3em;
+    box-shadow: -5px 5px 0 #E1D4C2;
+    border-radius: 5px;
 }
 
 /* The footer style goes here */
