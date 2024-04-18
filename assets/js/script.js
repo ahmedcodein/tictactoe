@@ -1,8 +1,8 @@
-console.clear()
+console.clear();
 // Allow the DOM to be loaded before starting the game
 // This line of code is adopted from JS workthrough project
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("Page is loaded")
+    console.log("Page is loaded");
     // Declare inputs to the game, connect them to the DOM where appropriate
     let players = Array.from(document.getElementsByClassName('players'));
     let Spots = Array.from(document.getElementsByClassName('spot'));
@@ -37,18 +37,18 @@ document.addEventListener("DOMContentLoaded", function () {
      * it declares the first player character.
      */
     function startTheGame(players, aPlayerClickedEvent, callback) {
-        let userListenerStorage = []
+        let userListenerStorage = [];
         // Check which players buttons was fired
         for (let i = 0; i < players.length; i++) {
             let userListenerHandler = function () {
                 if (!aPlayerClickedEvent) {
                     // Prevents any more player's selection
                     aPlayerClickedEvent = true;
-                    callback(players[i].innerText)
+                    callback(players[i].innerText);
                 }
-            }
+            };
             players[i].addEventListener('click', userListenerHandler);
-            userListenerStorage.push(userListenerHandler)
+            userListenerStorage.push(userListenerHandler);
         }
         listenedToUser = userListenerStorage;
     }
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function playersDeclaration(firstPlayer) {
         firstPlayer === "O" ? secondPlayer = "X" : secondPlayer = "O";
         document.getElementById("dash-board").innerText = `It is ${firstPlayer}'s turn`;
-        return secondPlayer
+        return secondPlayer;
     }
 
     function fillTheSpots(count, firstPlayer, secondPlayer, Spots, playingSpots, callback) {
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function gameResultEvaluation(resultStorage, filledInSpots) {
-        let winner
+        let winner;
         let winnerFound = false;
         const winningCombinations = [
             [0, 1, 2],
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
             [2, 5, 8],
             [0, 4, 8],
             [2, 4, 6]
-        ]
+        ];
         for (let i = 0; i < winningCombinations.length; i++) {
             let [a, b, c] = winningCombinations[i];
             let winningConditon = (filledInSpots[a] !== null && (filledInSpots[a] === filledInSpots[b] && filledInSpots[a] === filledInSpots[c]));
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function resetRoundFunction() {
         if (typeof listenedToCharacter !== "object") {
-            return
+            return;
         } else {
             for (let i = 0; i < Spots.length; i++) {
                 Spots[i].removeEventListener('click', listenedToCharacter[i]);
@@ -163,8 +163,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('counter-o').innerText = `Player O: ${resultStorage.filter(item => item === "O").length}`;
         document.getElementById('counter-x').innerText = `Player X: ${resultStorage.filter(item => item === "X").length}`;
         document.getElementById("dash-board").innerText = "Choose either of the characters to start the game!";
-        playingSpots.fill(null)
-        alert("The game is reset")
+        playingSpots.fill(null);
+        alert("The game is reset");
         // re initiate the game on the default inputs
         initiateTheGame();
     }
