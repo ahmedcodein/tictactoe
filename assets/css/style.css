@@ -99,6 +99,9 @@ main {
 
 .spot {    
     border: 1px solid #040B03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 3.8em;
     height: 3.8em;
     text-align: center;
