@@ -113,7 +113,6 @@ main {
 }
 
 #reset-buttons {
-    border: 1px solid #040B03;
     display: flex;
     flex-direction: column; /* present the buttons vertically */
 }
