@@ -91,14 +91,16 @@ main {
     width: 11.6em;
     height: 11.6em;
     display: grid;
+    align-content: center;
     grid-template-columns: 3.8em 3.8em 3.8em;
     grid-template-columns: 3.8em 3.8em 3.8em;
+    gap: 2px;
 }
 
-.spot {
+.spot {    
     border: 1px solid #040B03;
-    width: 3.75em;
-    height: 3.75em;
+    width: 3.8em;
+    height: 3.8em;
     text-align: center;
 }
 
