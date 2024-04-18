@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 Spots[i].innerText = '';
             }
             initiateTheGame();
-        }, 3000);
+        }, 10000);
 
     }
 
@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 Spots[i].innerText = '';
             }
             initiateTheGame();
-        }, 3000);
+        }, 10000);
     }
 
     function resetRoundFunction() {
