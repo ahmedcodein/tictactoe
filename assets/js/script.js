@@ -152,21 +152,24 @@ document.addEventListener("DOMContentLoaded", function () {
         if (typeof listenedToCharacter !== "object") {
             return
         } else {
-            for (let i = 0; i < Spots.length; i++) {
-                Spots[i].removeEventListener('click', listenedToCharacter[i]);
-                Spots[i].innerText = '';
+            if (confirm("are you sure you want to reset the game?") === true) {
+
+                for (let i = 0; i < Spots.length; i++) {
+                    Spots[i].removeEventListener('click', listenedToCharacter[i]);
+                    Spots[i].innerText = '';
+                }
+                for (let i = 0; i < players.length; i++) {
+                    players[i].removeEventListener('click', listenedToUser[i]);
+                }
+                resultStorage = Array(0);
+                document.getElementById('counter-o').innerText = `Player O: ${resultStorage.filter(item => item === "O").length}`;
+                document.getElementById('counter-x').innerText = `Player X: ${resultStorage.filter(item => item === "X").length}`;
+                document.getElementById("dash-board").innerText = "Choose a character to start!";
+                playingSpots.fill(null);
+                alert("The game is reset");
+                // re initiate the game on the default inputs
+                initiateTheGame();
             }
         }
-        for (let i = 0; i < players.length; i++) {
-            players[i].removeEventListener('click', listenedToUser[i]);
-        }
-        resultStorage = Array(0);
-        document.getElementById('counter-o').innerText = `Player O: ${resultStorage.filter(item => item === "O").length}`;
-        document.getElementById('counter-x').innerText = `Player X: ${resultStorage.filter(item => item === "X").length}`;
-        document.getElementById("dash-board").innerText = "Choose a character to start!";
-        playingSpots.fill(null);
-        alert("The game is reset");
-        // re initiate the game on the default inputs
-        initiateTheGame();
     }
 });
