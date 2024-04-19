@@ -102,9 +102,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3.8em;
-    height: 3.8em;
+    width: 60px;
+    height: 60px;
     text-align: center;
+    font-size: 40px;
 }
 
 /* The Score Board Section style goes here */
