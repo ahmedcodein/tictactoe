@@ -9,7 +9,8 @@
 
 /* The general body style goes here */
 body {
-    background-color: #FEFEF0;
+    background: url('../images/background-image.png') no-repeat center/cover;
+    background-color: #fdf6daff;
     font-family: 'Salsa', sans-serif;
     font-weight: 800;
     display: flex;
@@ -73,8 +74,9 @@ main {
     font-family: inherit;
     margin-top: 1.2em;
     margin-bottom: 1.4em;
-    box-shadow: -5px 5px 0 #E1D4C2;
+    box-shadow: -5px 5px 0 #210e03ff;
     border-radius: 5px;
+    background: transparent;
 }
 
 /* The Game Board Section style goes here */
@@ -97,8 +99,8 @@ main {
     gap: 2px;
 }
 
-.spot {    
-    border: 1px solid #040B03;
+.spot {
+    border: 1px solid #210e03ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +115,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height:8rem;
+    height: 8rem;
     align-items: center;
 }
 
@@ -127,7 +129,8 @@ main {
 
 #reset-buttons {
     display: flex;
-    flex-direction: column; /* present the buttons vertically */
+    flex-direction: column;
+    /* present the buttons vertically */
 }
 
 #round-reset {
@@ -135,8 +138,9 @@ main {
     font-weight: 600;
     font-family: inherit;
     margin: .3em;
-    box-shadow: -5px 5px 0 #E1D4C2;
+    box-shadow: -5px 5px 0 #210e03ff;
     border-radius: 5px;
+    background: transparent;
 }
 
 #game-reset {
@@ -144,14 +148,15 @@ main {
     font-weight: 600;
     font-family: inherit;
     margin: .3em;
-    box-shadow: -5px 5px 0 #E1D4C2;
+    box-shadow: -5px 5px 0 #210e03ff;
     border-radius: 5px;
+    background: transparent;
 }
 
 /* The footer style goes here */
 footer {
-    background-color: #040B03;
-    color: #FEFEF0;
+    background-color: #210e03ff;
+    color: #fdf6daff;
     display: flex;
     flex-direction: column;
     width: inherit;
@@ -175,12 +180,12 @@ li {
 
 .pages-icons {
     font-size: xx-large;
-    color: #E9E4D6;
+    color: #fdf6daff;
 }
 
 #disclaimer {
     margin-top: 1rem;
-    border-top: 1px solid #FEFEF0;
+    border-top: 1px solid #fdf6daff;
     padding-top: .5em;
     font-size: 80%;
     text-align: center;
@@ -190,12 +195,21 @@ li {
     #setup-board {
         width: 40vw;
     }
+
+    #dash-board {
+        font-size: 150%;
+    }
+
     #score-board {
         width: 40vw;
+    }
+
+    #scores {
+        font-size: 150%;
     }
 
     #info {
         width: 20vw;
     }
-    
+
 }
