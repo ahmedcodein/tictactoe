@@ -166,7 +166,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById('counter-x').innerText = `Player X: ${resultStorage.filter(item => item === "X").length}`;
                 document.getElementById("dash-board").innerText = "Choose a character to start!";
                 playingSpots.fill(null);
-                alert("The game is reset");
                 // re initiate the game on the default inputs
                 initiateTheGame();
             }
