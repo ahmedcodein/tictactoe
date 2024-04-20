@@ -18,7 +18,7 @@ Among the 10 candidates presented in the article, the author chooses to move wit
 3.	Good enough of interactions between the DOM and the JavaScript to become familiar with the concept of DOM manipulation.
 
 
-### 2.2. Project Objective
+### 2.2. Project Objective {#project-objective}
 
 From the author's perspective, the main goal of developing this game is to become familiar with JavaScript programming and its interactions with HTML DOM.
 
@@ -30,11 +30,21 @@ The owner objective is to build an online game that is easy to understand, inter
 
 User objective converges with the site owner's in the sense of finding an online game that is easy to interact with in addition to the provision of some challenge while playing the game by accumulating score when played with a friend. 
 
-### 2.3. Design Concept
+### 2.3. Website Requirements
 
-#### 2.3.1. Website Requirements
+This section describes the general requirements of the game. The author constructs these requirements by translating the aspects briefly reviewed in the previous sections. Subsequently, the author constructs five general design requirements, summarized below:
 
-Outline the key requirements for the website.
+1. The game design must signal some ancient historical characteristics to reflects a general feeling about it origin
+2. The game design consists of three major parts: 
+    - Two players each has a symbole of either X or O.
+    - A 3-x-3 boxes represents the game board
+    - A players' score board to track the records of winning
+3. The game design must be simple and easy to navigate as much as possible.
+4. The game design must record the score of winning and present it to the user
+5. A section in the game page that leads to the author online pages[^1]
+
+[^1]: Although, the last design requirement is not related to the owner’s or visitor’s objective nor to the game design requirements, it is related to sole purpose of pursuing this course, see {project-objective}. That is connect with people who are sharing the same interests to exchange ideas, pursue future project collaborations or simply get feedback for improvement on the author’s work.
+ 
 
 #### 2.3.2. Structure
 
