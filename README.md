@@ -52,8 +52,7 @@ This section intents to describe the planning phase of the project. The planning
 
 These sub-phases is desicribed in the following subsections. One can think of the subsequent discriptions as a detailed path as to how each of the 5 requirements presented in the previous section is trasformed into a tangable object, i.e the game website.
 
-
-#### 2.3.3. Wireframes
+#### 2.4.1. Wireframes
 
 This section is designed to provide a high-level overview about the early design thinking of the Game website. The main purpose of these wireframes is to aid the design of the HTML website Without delving into what style or how the JavaScript interacts with the HTML. The main expected outputs of these wireframes are:
 
@@ -61,7 +60,7 @@ This section is designed to provide a high-level overview about the early design
 - What is the preliminary structure of the HTML page?
 - What is the preliminary naming used for HTML elements IDs and Classes?
 
-#### 2.3.3.1. Preliminary layout of the website
+#### 2.4.1.1 Preliminary layout of the website
 
 Using Balsamiq Wireframes, the Game page is presented in three different viewing senarios. These are Smartphone, Tablet and Desktop. 
 
@@ -73,7 +72,7 @@ Using Balsamiq Wireframes, the Game page is presented in three different viewing
 
 ![Website's layout on Tablet or Desktop screens](documentation/images/pc-layout.png)
 
-#### 2.3.3.2. Preliminary structure of the HTML page
+#### 2.4.1.2 Preliminary structure of the HTML page
 
 Following the wireframes' layout presented on section 2.3.3., the high-level html structure is constructed. The structure is shown in the image below. 
 
@@ -85,7 +84,7 @@ As shown in the figure above, the HTML structure is divided into three parts:
 - Main: The main contains three sections, these are: Setup Board, Game Board and Score board.
 - Footer: The footer contains two types of information; these are links to the author's LinkedIn and GitHub websites.
 
-#### 2.3.3.3. preliminary naming used for HTML elements IDs and Classes
+#### 2.4.1.3. preliminary naming used for HTML elements IDs and Classes
 
 The following image is devoted to give additional resolution to the previous subsection by elaborating further on the elements contained in the body of the HTML page. In addition, the image provides further color on the IDs and Classes naming strategy that the author intends to implement to develop the HTML page and subsequently will be used for the page styling and to manipulate the page by the JavaScript code.
 
