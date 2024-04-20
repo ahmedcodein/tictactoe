@@ -90,14 +90,35 @@ The following image is devoted to give additional resolution to the previous sub
 
 ![Website's HTML structure](documentation/images/ids-classes-naming.png)
 
+### 2.4.2. Styling
 
-#### 2.3.4. Colour
+One of the website requements is to present the game with an ancient charactertic touch. This is to refelct the history of the game origin. Towards achieving this, the author opts to present the game as it is played on an old paper or leather scroll background. To constuct such background, the author uses [ChatGPT](https://chat.openai.com/auth/login?sso) to create the background. The players then use black ink to handright the game board and later the score as the game goes.
 
-Talk about the colour scheme of the website.
+#### 2.3.4. Color
+
+As you might have already guessed, the background image is used as the basis for color extraction. The process of selection is described below:
+
+1. Color Candidates
+
+The first step is to extract a pallet of candidate colors from the background image. The author used [Coolors](https://coolors.co/fdf6da-dcbf87-dcb36f-ac8144-744b1e-704116-6b350f-210e03) for that matter. The result is presented in the image below.
+
+![Color Candidate](documentation/images/coolors-pallete.PNG).
+
+2. Color Contrast Evaluation
+
+In order to select the most valid color combination, the author uses [Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23fdf6daff%3B%0D%0A%23dcbf87ff%3B%0D%0A%23dcb36fff%3B%0D%0A%23ac8144ff%3B%0D%0A%23744b1eff%3B%0D%0A%23704116ff%3B%0D%0A%236b350fff%3B%0D%0A%23210e03ff%3B%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to achieve the result. The figure below shows the result of the evaulation[^2].
+
+[^2]: The author add the black color (#000000) to the contrast evaluation to account for the color of the text (the bank ink).
+
+![Contrast Evaluation Resutl](documentation/images/contrast-grid.PNG)
+
+3. Color Selection
+
+The selection of the color is choosen based on the contrast result. The author choose to select the most reliable result that is going with Cornsilk for font and border lines and Licorice for the footer background.
 
 #### 2.3.5. Fonts
 
-Detail the fonts used in the project.
+Since the intention is to use the a handwriting font style to foster the historical characteristic feeling of the game. The author selects Salsa font. [Google fonts](https://fonts.google.com/specimen/Salsa?query=Salsa) is used to find the aforementioned font and import it to the style sheet.
 
 ## 3. Execution
 
