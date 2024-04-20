@@ -43,9 +43,15 @@ This section describes the general requirements of the game. The author construc
 
 [^1]: Although, the last design requirement is not related to the owner’s or visitor’s objective nor to the game design requirements, it is related to sole purpose of pursuing this course, see {project-objective}. That is connect with people who are sharing the same interests to exchange ideas, pursue future project collaborations or simply get feedback for improvement on the author’s work.
 
-#### 2.3.2. Structure
+#### 2.4. Planning
 
-Describe the structure of the website.
+This section intents to describe the planning phase of the project. The planning phase consisits of three sub-phases:
+- Wireframes/HTML structure
+- Styling
+- Game Logic
+
+These sub-phases is desicribed in the following subsections. One can think of the subsequent discriptions as a detailed path as to how each of the 5 requirements presented in the previous section is trasformed into a tangable object, i.e the game website.
+
 
 #### 2.3.3. Wireframes
 
