@@ -8,7 +8,6 @@ Tic Tac Toe game is an ancient board game. According to Wikipedia, the game goes
 
 The process followed by the author consists of five phases. These phases are presented below with a detailed account is presented in the subsequent sections.
 
-
 ### 2.1. Project research and selection criteria
 
 In the research phase the author has conducted a brief search on easy to implement games for the purpose of learning HTML, CSS and JavaScript together. Many resources can be found, the author however settled on the following [article](https://www.codingnepalweb.com/best-javascript-games-for-beginners/). 
@@ -16,7 +15,6 @@ Among the 10 candidates presented in the article, the author chooses to move wit
 1.	Simple User Interface with minimum graphics
 2.	Average logic complexity
 3.	Good enough of interactions between the DOM and the JavaScript to become familiar with the concept of DOM manipulation.
-
 
 ### 2.2. Project Objective {#project-objective}
 
@@ -44,7 +42,6 @@ This section describes the general requirements of the game. The author construc
 5. A section in the game page that leads to the author online pages[^1]
 
 [^1]: Although, the last design requirement is not related to the owner’s or visitor’s objective nor to the game design requirements, it is related to sole purpose of pursuing this course, see {project-objective}. That is connect with people who are sharing the same interests to exchange ideas, pursue future project collaborations or simply get feedback for improvement on the author’s work.
- 
 
 #### 2.3.2. Structure
 
