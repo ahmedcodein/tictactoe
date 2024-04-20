@@ -11,7 +11,7 @@ The process followed by the author consists of five phases. These phases are pre
 
 ### 2.1. Project research and selection criteria
 
-In the research phase the author has conducted a brief search on easy to implement games for the purpose of learning HTML, CSS and JavaScript together. Many resources can be found, the author however settled on the following article: https://www.codingnepalweb.com/best-javascript-games-for-beginners/. 
+In the research phase the author has conducted a brief search on easy to implement games for the purpose of learning HTML, CSS and JavaScript together. Many resources can be found, the author however settled on the following [article](https://www.codingnepalweb.com/best-javascript-games-for-beginners/). 
 Among the 10 candidates presented in the article, the author chooses to move with Tic Tac Toe game due to three main reasons:
 1.	Simple User Interface with minimum graphics
 2.	Average logic complexity
@@ -20,7 +20,7 @@ Among the 10 candidates presented in the article, the author chooses to move wit
 
 ### 2.2. Project Objective
 
-The main anticipated objective of developing this game is to become familiar with JavaScript programming and its interactions with HTML DOM.
+From the author's perspective, the main goal of developing this game is to become familiar with JavaScript programming and its interactions with HTML DOM.
 
 #### 2.2.1. Website Owner Objectives
 
@@ -28,7 +28,7 @@ The owner objective is to build an online game that is easy to understand, inter
 
 #### 2.2.2. Website Visitor Objectives
 
-User objective converges with the site owner's in the sense of finding an online game that is easy to interact with in addition to the provision of some challenge in playing the game by accumulating score when played with a friend. 
+User objective converges with the site owner's in the sense of finding an online game that is easy to interact with in addition to the provision of some challenge while playing the game by accumulating score when played with a friend. 
 
 ### 2.3. Design Concept
 
