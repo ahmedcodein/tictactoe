@@ -149,30 +149,16 @@ document.addEventListener("DOMContentLoaded", function () {
         playingSpots.fill(null);
         initiateTheGame();
     }
-
+    /** This function is first check if a reset message prsentation is needed, if yes it then activates
+     * the message activiation function, if not, no action.
+     */
     function resetGameFunction() {
-        // Fix error when pressing reset before selecting either of the characters
-        if (typeof listenedToCharacter !== "object") {
-            return
+        if (playingSpots.filter(item => item === null).length === playingSpots.length) {
+            return;
         } else {
-            if (confirm("are you sure you want to reset the game?") === true) {
-
-                for (let i = 0; i < Spots.length; i++) {
-                    Spots[i].removeEventListener('click', listenedToCharacter[i]);
-                    Spots[i].innerText = '';
-                }
-                for (let i = 0; i < players.length; i++) {
-                    players[i].removeEventListener('click', listenedToUser[i]);
-                }
-                resultStorage = Array(0);
-                document.getElementById('counter-o').innerText = `Player O: ${resultStorage.filter(item => item === "O").length}`;
-                document.getElementById('counter-x').innerText = `Player X: ${resultStorage.filter(item => item === "X").length}`;
-                document.getElementById("dash-board").innerText = "Choose a character to start!";
-                playingSpots.fill(null);
-                // re initiate the game on the default inputs
-                initiateTheGame();
-            }
+            resetMessageActivation();
         }
+
     }
     //** This function activates the modal reset message if user wants to reset the game*/
     function resetMessageActivation() {
@@ -187,8 +173,26 @@ document.addEventListener("DOMContentLoaded", function () {
         resetMessage.style.display = 'none';
         return
     }
-    //** This function resets the game if the user confimrs the reset order*/
+    /**If the user confirms the order of reset, this function will reset all the input data to its default status 
+     * then it re initiates the game
+     */
     function resetTheGame() {
 
+        yesReset.removeEventListener('click', resetTheGame);
+        for (let i = 0; i < Spots.length; i++) {
+            Spots[i].removeEventListener('click', listenedToCharacter[i]);
+            Spots[i].innerText = '';
+        }
+        for (let i = 0; i < players.length; i++) {
+            players[i].removeEventListener('click', listenedToUser[i]);
+        }
+        resultStorage = Array(0);
+        document.getElementById('counter-o').innerText = `Player O: ${resultStorage.filter(item => item === "O").length}`;
+        document.getElementById('counter-x').innerText = `Player X: ${resultStorage.filter(item => item === "X").length}`;
+        document.getElementById("dash-board").innerText = "Choose a character to start!";
+        playingSpots.fill(null);
+        resetMessage.style.display = 'none';
+        // re initiate the game on the default inputs
+        initiateTheGame();
     }
 });
