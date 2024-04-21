@@ -154,7 +154,7 @@ main {
 }
 
 #reset-message {
-    display: block;
+    display: none;
     position: absolute;
     border: 2px solid #fdf6daff;
     background: rgba(33, 14, 3, .9);
