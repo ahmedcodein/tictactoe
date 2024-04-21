@@ -117,7 +117,9 @@ document.addEventListener("DOMContentLoaded", function () {
             resultDrawAnnouncement();
         }
     }
-
+/** This function is only activated  when the round result is a draw, it then view the announcement
+ * in the dash board
+ */
     function resultDrawAnnouncement() {
         document.getElementById("dash-board").innerText = `It is draw`;
     }
