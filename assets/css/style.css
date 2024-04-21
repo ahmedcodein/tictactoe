@@ -161,6 +161,7 @@ footer {
     flex-direction: column;
     width: inherit;
     height: 16vh;
+    min-height: 100px;
     align-items: center;
 }
 
