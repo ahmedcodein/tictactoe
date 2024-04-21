@@ -183,6 +183,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //**This function will cancel the reset order of the user if the user choose to not execute the reset order*/    
     function returnToGame() {
+        noReset.removeEventListener('click', returnToGame);
+        resetMessage.style.display = 'none';
 
     }
     //** This function resets the game if the user confimrs the reset order*/
