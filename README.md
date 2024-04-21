@@ -6,20 +6,19 @@ Tic Tac Toe game is an ancient board game. According to Wikipedia, the game goes
 
 ![Introduction image, the website presentation on different view screens](documentation/images/introduction.PNG)
 
-
 ## 2. Development Process
 
 The process followed by the author consists of five phases. These phases are presented below with a detailed account is presented in the subsequent sections.
 
-### 2.1. Project research and selection criteria
+### 2.1.Research and Selection Criteria
 
-In the research phase the author has conducted a brief search on easy to implement games for the purpose of learning HTML, CSS and JavaScript together. Many resources can be found, the author however settled on the following [article](https://www.codingnepalweb.com/best-javascript-games-for-beginners/). 
+In the research phase the author has conducted a brief search on easy to implement games for the purpose of learning HTML, CSS and JavaScript together. Many resources can be found, the author however settled on the following [Article](https://www.codingnepalweb.com/best-javascript-games-for-beginners/). 
 Among the 10 candidates presented in the article, the author chooses to move with Tic Tac Toe game due to three main reasons:
 1.	Simple User Interface with minimum graphics
 2.	Average logic complexity
 3.	Good enough of interactions between the DOM and the JavaScript to become familiar with the concept of DOM manipulation.
 
-### 2.2. Project Objective {#project-objective}
+### 2.2. Project Objective
 
 From the author's perspective, the main goal of developing this game is to become familiar with JavaScript programming and its interactions with HTML DOM.
 
@@ -57,7 +56,7 @@ These sub-phases is desicribed in the following subsections. One can think of th
 
 #### 2.4.1. Wireframes
 
-This section is designed to provide a high-level overview about the early design thinking of the Game website. The main purpose of these wireframes is to aid the design of the HTML website Without delving into what style or how the JavaScript interacts with the HTML. The main expected outputs of these wireframes are:
+This section is designed to provide a high-level overview about the early design thinking of the Game website. The main purpose of these wireframes is to aid the design of the HTML website without delving into what style or how the JavaScript interacts with the HTML. The main expected outputs of these wireframes are:
 
 - What is the preliminary layout of the website?
 - What is the preliminary structure of the HTML page?
@@ -87,7 +86,7 @@ As shown in the figure above, the HTML structure is divided into three parts:
 - Main: The main contains three sections, these are: Setup Board, Game Board and Score board.
 - Footer: The footer contains two types of information; these are links to the author's LinkedIn and GitHub websites.
 
-##### 2.4.1.3. preliminary naming used for HTML elements IDs and Classes
+##### 2.4.1.3. Preliminary naming used for HTML elements IDs and Classes
 
 The following image is devoted to give additional resolution to the previous subsection by elaborating further on the elements contained in the body of the HTML page. In addition, the image provides further color on the IDs and Classes naming strategy that the author intends to implement to develop the HTML page and subsequently will be used for the page styling and to manipulate the page by the JavaScript code.
 
