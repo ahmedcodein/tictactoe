@@ -65,7 +65,10 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("dash-board").innerText = `It is ${firstPlayer}'s turn`;
         return secondPlayer;
     }
-
+    /** This function fills in the spots with characters based on the player spot choice. It also views the 
+     * the turn of the next player on the dash board. The game then pupulates an array with the characters 
+     * with index represents the spot position in the game board
+     */
     function fillTheSpots(count, firstPlayer, secondPlayer, Spots, playingSpots, callback) {
         let listenerStorage = [];
         for (let i = 0; i < Spots.length; i++) {
@@ -117,13 +120,13 @@ document.addEventListener("DOMContentLoaded", function () {
             resultDrawAnnouncement();
         }
     }
-/** This function is only activated  when the round result is a draw, it then view the announcement
- * in the dash board
- */
+    /** This function is only activated  when the round result is a draw, it then view the announcement
+     * in the dash board
+     */
     function resultDrawAnnouncement() {
         document.getElementById("dash-board").innerText = `It is draw`;
     }
-/** This function does announce the round winner, calulate the score and view it on the score board */
+    /** This function does announce the round winner, calulate the score and view it on the score board */
     function resultWinnerAnnouncement(resultStorage, winner) {
         document.getElementById("dash-board").innerText = `${winner}'s won this round!`;
         resultStorage.push(winner);
@@ -134,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Spots[i].removeEventListener('click', listenedToCharacter[i]);
         }
     }
-/** This function resets the round and does not reset the scores*/
+    /** This function resets the round and does not reset the scores*/
     function resetRoundFunction() {
         if (typeof listenedToCharacter !== "object") {
             return;
@@ -169,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
         noReset.addEventListener('click', returnToGame);
     }
     /**This function will cancel the reset order of the user if the user chooses to not execute the reset
-     * order */    
+     * order */
     function returnToGame() {
         noReset.removeEventListener('click', returnToGame);
         resetMessage.style.display = 'none';
