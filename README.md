@@ -120,6 +120,18 @@ The selection of the color is choosen based on the contrast result. The author c
 
 Since the intention is to use the a handwriting font style to foster the historical characteristic feeling of the game. The author selects Salsa font. [Google fonts](https://fonts.google.com/specimen/Salsa?query=Salsa) is used to find the aforementioned font and import it to the style sheet.
 
+#### 2.4.3. Game Logic
+
+This subsection describes in abstract terms the process followed by the author to construct the initial plan of creating the JavaScript code. 
+
+The process begins with reviewing the Wireframes to extract the following information:
+
+1. Game Inputs 
+2. Game Outputs
+3. Game Functions
+
+The author then combins these basic constracts with the general logic of the game to create a step wise explanation as to how the code should be constructed.
+
 ## 3. Execution
 
 ### 3.1. Technologies Used
