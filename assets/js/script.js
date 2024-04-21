@@ -176,7 +176,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     //** This function activates the modal reset message if user wants to reset the game*/
     function resetMessageActivation() {
-
+        resetMessage.style.display = 'block';
+        yesReset.addEventListener('click', resetTheGame);
+        noReset.addEventListener('click', returnToGame);
     }
 
     //**This function will cancel the reset order of the user if the user choose to not execute the reset order*/    
