@@ -9,7 +9,7 @@
 
 /* The general body style goes here */
 body {
-    background: url('../images/background-image.png') no-repeat center/cover;
+    background: url('../images/background.webp') no-repeat center/cover;
     background-color: #fdf6daff;
     font-family: 'Salsa', sans-serif;
     font-weight: 800;
