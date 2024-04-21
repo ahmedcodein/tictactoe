@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Spots[i].removeEventListener('click', listenedToCharacter[i]);
         }
     }
-
+/** This function resets the round and does not reset the scores*/
     function resetRoundFunction() {
         if (typeof listenedToCharacter !== "object") {
             return;
