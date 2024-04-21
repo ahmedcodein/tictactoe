@@ -115,6 +115,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-height: 30px;
     align-items: center;
 }
 
@@ -159,7 +160,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: inherit;
-    height: 15vh;
+    height: 16vh;
     align-items: center;
 }
 
