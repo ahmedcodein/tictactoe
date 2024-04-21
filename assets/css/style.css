@@ -154,7 +154,7 @@ main {
 }
 
 #reset-message {
-    display: none;
+    display: block;
     position: absolute;
     border: 2px solid #fdf6daff;
     background: rgba(33, 14, 3, .9);
@@ -244,6 +244,17 @@ li {
     }
 
     #scores {
+        font-size: 150%;
+    }
+
+    #reset-message {
+        font-size: 110%;
+        width: 30vw;
+        height: 16vh;
+        min-width: 400px;
+    }
+    
+    .reset-option {
         font-size: 150%;
     }
 
