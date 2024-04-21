@@ -24,6 +24,9 @@ header {
     margin-bottom: .5rem;
     width: 100vw;
     text-align: center;
+    min-height: 20px;
+    height: 5vh;
+
 }
 
 header h1 {
@@ -37,7 +40,8 @@ main {
     align-items: center;
     flex: 1 0 auto;
     width: 100vw;
-    height: 82vh;
+    min-height: 600px;
+    height: 78vh;
 }
 
 /* The Setup Board Section style goes here */
@@ -45,7 +49,6 @@ main {
     display: flex;
     flex-direction: column;
     width: inherit;
-    height: 18vh;
     align-items: center;
 }
 
@@ -60,7 +63,6 @@ main {
     margin-bottom: 5px;
     display: flex;
     width: inherit;
-    height: 18vh;
     align-items: center;
     justify-content: space-around;
 }
@@ -72,8 +74,6 @@ main {
     font-size: 40px;
     font-weight: bolder;
     font-family: inherit;
-    margin-top: 1.2em;
-    margin-bottom: 1.4em;
     box-shadow: inset 0px -1px 3px 3px #210e03ff;
     border-radius: 5px;
     background: transparent;
@@ -84,7 +84,6 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 14em;
     align-items: center;
 }
 
@@ -116,7 +115,6 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 8rem;
     align-items: center;
 }
 
@@ -161,7 +159,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: inherit;
-    height: 22vh;
+    height: 15vh;
     align-items: center;
 }
 
