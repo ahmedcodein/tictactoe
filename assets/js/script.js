@@ -174,4 +174,17 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     }
+    //** This function activates the modal reset message if user wants to reset the game*/
+    function resetMessageActivation() {
+
+    }
+
+    //**This function will cancel the reset order of the user if the user choose to not execute the reset order*/    
+    function returnToGame() {
+
+    }
+    //** This function resets the game if the user confimrs the reset order*/
+    function resetTheGame() {
+
+    }
 });
