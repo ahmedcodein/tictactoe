@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function resultDrawAnnouncement() {
         document.getElementById("dash-board").innerText = `It is draw`;
     }
-
+/** This function does announce the round winner, calulate the score and view it on the score board */
     function resultWinnerAnnouncement(resultStorage, winner) {
         document.getElementById("dash-board").innerText = `${winner}'s won this round!`;
         resultStorage.push(winner);
