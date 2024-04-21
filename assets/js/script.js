@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let playingSpots = Array(Spots.length).fill(null);
     let roundReset = document.getElementById('round-reset');
     let gameReset = document.getElementById('game-reset');
-    let resetMessage = document.getElementsByClassName('cofirm');
+    let resetMessage = document.getElementById('reset-message');
     let yesReset = document.getElementById('yes-reset');
     let noReset = document.getElementById('no-reset');
     let resultStorage = Array(0);
