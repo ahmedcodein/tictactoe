@@ -1,8 +1,6 @@
-console.clear();
 // Allow the DOM to be loaded before starting the game
 // This line of code is adopted from JS workthrough project
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("Page is loaded");
     // Declare inputs to the game, connect them to the DOM where appropriate
     let players = Array.from(document.getElementsByClassName('players'));
     let Spots = Array.from(document.getElementsByClassName('spot'));
@@ -13,12 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let yesReset = document.getElementById('yes-reset');
     let noReset = document.getElementById('no-reset');
     let resultStorage = Array(0);
-
     roundReset.addEventListener('click', resetRoundFunction);
     gameReset.addEventListener('click', resetGameFunction);
-
     initiateTheGame();
-
     /**This function initiate the Game once the DOM is loaded.
      * It waits then the user to click on one of the users to start the game.
      */
@@ -30,12 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
             let secondPlayer = playersDeclaration(firstPlayer);
             fillTheSpots(count, firstPlayer, secondPlayer, Spots, playingSpots, function (filledInSpots) {
                 gameResultEvaluation(resultStorage, filledInSpots);
-
             });
         });
-
     }
-
     /**This function listens to the players buttons. Once either of the players clicked
      * it declares the first player character.
      */
@@ -55,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         listenedToUser = userListenerStorage;
     }
-
     /** This function declares the second player by observing the character of the first player
      * It also announce the character turn on the dashboard once, the first character is chosen
      */
@@ -163,7 +154,6 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             resetMessageActivation();
         }
-
     }
     /**This function activates the modal reset message if the user wants to reset the game */
     function resetMessageActivation() {
@@ -182,7 +172,6 @@ document.addEventListener("DOMContentLoaded", function () {
      * then it re initiates the game
      */
     function resetTheGame() {
-
         yesReset.removeEventListener('click', resetTheGame);
         for (let i = 0; i < Spots.length; i++) {
             Spots[i].removeEventListener('click', listenedToCharacter[i]);
