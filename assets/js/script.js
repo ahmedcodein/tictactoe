@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
      * the message activiation function, if not, no action.
      */
     function resetGameFunction() {
-        if (playingSpots.filter(item => item === null).length === playingSpots.length) {
+        if (typeof listenedToCharacter !== "object") {
             return;
         } else {
             resetMessageActivation();
