@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function returnToGame() {
         noReset.removeEventListener('click', returnToGame);
         resetMessage.style.display = 'none';
-
+        return
     }
     //** This function resets the game if the user confimrs the reset order*/
     function resetTheGame() {
