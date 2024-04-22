@@ -172,6 +172,12 @@ document.addEventListener("DOMContentLoaded", function () {
     function returnToGame() {
         noReset.removeEventListener('click', returnToGame);
         resetMessage.style.display = 'none';
+        for (let i = 0; i < Spots.length; i++) {
+            Spots[i].addEventListener('click', listenedToCharacter[i]);
+        }
+        for (let i = 0; i < players.length; i++) {
+            players[i].addEventListener('click', listenedToUser[i]);
+        }
         return
     }
     /**If the user confirms the order of reset, this function will reset all the input data to its default status 
