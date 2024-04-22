@@ -247,4 +247,6 @@ List the tools used in the project.
 
 ### 6.4. Acknowledgement
 
-Acknowledge any help received during the project.
+I would like to express my gratitude to Mr. David Bowers for his outstanding mentorship. His inputs, feedback and guidance are invaluable. I am looking forward to continuing working with him on the upcoming projects.
+I would like also to pass my sincere appreciations to all CI students who have reviewed my project and saved some of their valuable time to write me their views and improvement suggestions. The same sentiment goes to all my friends and family who have provided their suppot and reviewed the project and for the provision of their feedback on the website.
+
