@@ -134,11 +134,11 @@ The process begins with reviewing the Wireframes to extract the following inform
 
 The author then combins these basic constracts with the general logic of the game to create a step wise explanation as to how the code should be constructed.
 
-## 3. Execution
+### 2.5. Execution
 
 This section is devoted to describing the execution phase of the project. The section starts with listing the technologies used to develop the website. Then it presents the result of conducted tests using different test tools. Another subsection is included to explains some of the bugs found during the execution phase. This subsection also presents some of the issues that are identified which deserve some explanations. The section then concludes with a brief deployment procedure followed by the author to deploy the website.  
 
-### 3.1. Technologies Used
+#### 2.5.1. Technologies Used
 
 The list of techologies used to develop the Tic Tac Toe game of this project are as follows:
 
@@ -150,11 +150,11 @@ The list of techologies used to develop the Tic Tac Toe game of this project are
 6. Chrome DevTools: Web Development Tools for testing and debugging
 7. Other testing tools: Wave, Lighthouse, W3C and JSHint
 
-### 3.2. Website Tests
+#### 2.5.2. Website Tests
 
 The website went through multiple tests through out the development stage. The results of these tests provided in this section, however, cover only the final round of tests. 
 
-#### 3.2.1. Google Lighthouse
+##### 2.5.2.1 Google Lighthouse
 
 The result of Lighthouse tool tests for both mobile and screen are presented below.
 
@@ -164,34 +164,34 @@ The result of Lighthouse tool tests for both mobile and screen are presented bel
 ###### Disktop Test
 ![Lighthouse tool desktop test resutl](documentation/images/lighthouse-desktop.PNG)
 
-#### 3.2.2. Web Accessibility Evaluation (Wave) Tool
+##### 2.5.2.2. Web Accessibility Evaluation (Wave) Tool
 
 The result of the Wave Evaluation Tool test is presented in the figure below:
 
 ![Wave Evaluation Tool test resutl](documentation/images/wave-evaluation.PNG)
 
-#### 3.2.3. W3C Markup Validation Service
+##### 2.5.2.3. W3C Markup Validation Service
 
 The result of W3C Markup Validation Service for the HTML file is shown below:
 
 ![W3C Markup Validation Service test resutl](documentation/images/html-w3c.PNG)
 
-#### 3.2.4. W3C CSS Validation Service
+##### 2.5.2.4. W3C CSS Validation Service
 
 The result of W3C CSS Validation Service for the CSS file is shown below:
 
 ![W3C CSS Validation Service test resutl](documentation/images/css-w3c.PNG)
 
-#### 3.2.5. JSHint
+##### 2.5.2.5. JSHint
 
 Discuss JavaScript validation.
 
 
-#### 3.2.6. Device Test
+##### 2.5.2.6. Device Test
 
 The game is tested in different devices (Mobiles, Laptops and Desktop) and different operating systems (Windows 10 and Android). The presentation on all those devices shows no apparent issue. Where applicable, the game is also tested on those devices in landscape and portrait modes.
 
-#### 3.2.9. Browser Test
+##### 2.5.2.9. Browser Test
 
 The game is tested in the following browsers:
 
@@ -201,13 +201,13 @@ The game is tested in the following browsers:
 
 No issue is reported.
 
-### 3.3. Bugs
+#### 2.5.3. Bugs
 
-#### 3.3.1. Fixed Bugs
+##### 2.5.3.1. Fixed Bugs
 
 List the bugs that were identified and fixed.
 
-#### 3.3.2. Unfixed Bugs
+##### 2.5.3.2. Unfixed Bugs
 
 Mention any bugs that have not yet been fixed.
 
