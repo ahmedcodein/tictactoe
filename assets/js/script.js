@@ -83,7 +83,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         listenedToCharacter = listenerStorage;
     }
-
+    /** This function evaluates after each new filled spot if the winning condition is satidfied.
+     * If true returen the winner, not contenue until a winner found or it is a draw when no more spots
+     * are available 
+     */
     function gameResultEvaluation(resultStorage, filledInSpots) {
         let winner;
         let winnerFound = false;
