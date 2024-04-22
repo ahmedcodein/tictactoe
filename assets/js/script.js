@@ -153,6 +153,12 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         } else {
             resetMessageActivation();
+            for (let i = 0; i < Spots.length; i++) {
+                Spots[i].removeEventListener('click', listenedToCharacter[i]);
+            }
+            for (let i = 0; i < players.length; i++) {
+                players[i].removeEventListener('click', listenedToUser[i]);
+            }
         }
     }
     /**This function activates the modal reset message if the user wants to reset the game */
