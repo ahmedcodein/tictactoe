@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let noReset = document.getElementById('no-reset');
     let resultStorage = Array(0);
     let winnerFound;
+    let secondPlayer;
     roundReset.addEventListener('click', resetRoundFunction);
     gameReset.addEventListener('click', resetGameFunction);
     initiateTheGame();
@@ -23,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let aPlayerClickedEvent = false;
         let count = -1; // Used to count the number of clicks when the filltheSpots function is called
         startTheGame(players, aPlayerClickedEvent, function (firstPlayer) {
-            let secondPlayer = playersDeclaration(firstPlayer);
+            secondPlayer = playersDeclaration(firstPlayer);
             fillTheSpots(count, firstPlayer, secondPlayer, Spots, playingSpots, function (filledInSpots) {
                 winnerFound = gameResultEvaluation(resultStorage, filledInSpots);
             });
@@ -148,6 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         document.getElementById("dash-board").innerText = "Choose the first to start the round!";
         playingSpots.fill(null);
+        secondPlayer = false;
         initiateTheGame();
     }
     /** This function is first check if a reset message prsentation is needed, if yes it then activates
@@ -185,6 +187,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 players[i].addEventListener('click', listenedToUser[i]);
             }
         }
+        if (resultStorage.length !== 0) {
+            for (let i = 0; i < Spots.length; i++) {
+                Spots[i].removeEventListener('click', listenedToCharacter[i]);
+            }
+            for (let i = 0; i < players.length; i++) {
+                players[i].removeEventListener('click', listenedToUser[i]);
+            }
+        }
+        if (!secondPlayer) {
+            for (let i = 0; i < Spots.length; i++) {
+                Spots[i].removeEventListener('click', listenedToCharacter[i]);
+            }
+            for (let i = 0; i < players.length; i++) {
+                players[i].removeEventListener('click', listenedToUser[i]);
+            }
+        }
         return;
     }
     /**If the user confirms the order of reset, this function will reset all the input data to its default status 
@@ -205,6 +223,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("dash-board").innerText = "Choose a character to start!";
         playingSpots.fill(null);
         resetMessage.style.display = 'none';
+        secondPlayer = false;
         // re initiate the game on the default inputs
         initiateTheGame();
     }
