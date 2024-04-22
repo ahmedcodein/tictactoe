@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let yesReset = document.getElementById('yes-reset');
     let noReset = document.getElementById('no-reset');
     let resultStorage = Array(0);
+    let winnerFound;
     roundReset.addEventListener('click', resetRoundFunction);
     gameReset.addEventListener('click', resetGameFunction);
     initiateTheGame();
@@ -24,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         startTheGame(players, aPlayerClickedEvent, function (firstPlayer) {
             let secondPlayer = playersDeclaration(firstPlayer);
             fillTheSpots(count, firstPlayer, secondPlayer, Spots, playingSpots, function (filledInSpots) {
-                gameResultEvaluation(resultStorage, filledInSpots);
+                winnerFound = gameResultEvaluation(resultStorage, filledInSpots);
             });
         });
     }
@@ -113,6 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!winnerFound && drawCondition) {
             resultDrawAnnouncement();
         }
+        return winnerFound
     }
     /** This function is only activated  when the round result is a draw, it then view the announcement
      * in the dash board
@@ -175,11 +177,13 @@ document.addEventListener("DOMContentLoaded", function () {
     function returnToGame() {
         noReset.removeEventListener('click', returnToGame);
         resetMessage.style.display = 'none';
-        for (let i = 0; i < Spots.length; i++) {
-            Spots[i].addEventListener('click', listenedToCharacter[i]);
-        }
-        for (let i = 0; i < players.length; i++) {
-            players[i].addEventListener('click', listenedToUser[i]);
+        if (!winnerFound) {
+            for (let i = 0; i < Spots.length; i++) {
+                Spots[i].addEventListener('click', listenedToCharacter[i]);
+            }
+            for (let i = 0; i < players.length; i++) {
+                players[i].addEventListener('click', listenedToUser[i]);
+            }
         }
         return;
     }
