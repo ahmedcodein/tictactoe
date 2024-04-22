@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
      * It also announce the character turn on the dashboard once, the first character is chosen
      */
     function playersDeclaration(firstPlayer) {
-        let secondPlayer
+        let secondPlayer;
         firstPlayer === "O" ? secondPlayer = "X" : secondPlayer = "O";
         document.getElementById("dash-board").innerText = `It is ${firstPlayer}'s turn`;
         return secondPlayer;
@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
         for (let i = 0; i < players.length; i++) {
             players[i].addEventListener('click', listenedToUser[i]);
         }
-        return
+        return;
     }
     /**If the user confirms the order of reset, this function will reset all the input data to its default status 
      * then it re initiates the game
