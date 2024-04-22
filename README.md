@@ -136,47 +136,70 @@ The author then combins these basic constracts with the general logic of the gam
 
 ## 3. Execution
 
+This section is devoted to describing the execution phase of the project. The section starts with listing the technologies used to develop the website. Then it presents the result of conducted tests using different test tools. Another subsection is included to explains some of the bugs found during the execution phase. This subsection also presents some of the issues that are identified which deserve some explanations. The section then concludes with a brief deployment procedure followed by the author to deploy the website.  
+
 ### 3.1. Technologies Used
 
-List the technologies and tools used in the project.
+The list of techologies used to develop the Tic Tac Toe game of this project are as follows:
 
-### 3.2. Website Verification and Validation
+1. Hypertext Markup Language (HTML): markup language
+2. Cascading Style Sheets (CSS): Style Sheet language
+3. JavaScript: Programming language
+4. GitHub: Development Platform 
+5. Gitpod: Cloud Development Environment
+6. Chrome DevTools: Web Development Tools for testing and debugging
+7. Other testing tools: Wave, Lighthouse, W3C and JSHint
 
-#### 3.2.1. Verification Test
+### 3.2. Website Tests
 
-Describe the verification tests conducted.
+The website went through multiple tests through out the development stage. The results of these tests provided in this section, however, cover only the final round of tests. 
 
-#### 3.2.2. Validation Test
+#### 3.2.1. Google Lighthouse
 
-List the validation tests and their outcomes.
+The result of Lighthouse tool tests for both mobile and screen are presented below.
 
-#### 3.2.3. HTML Validation
+###### Mobile Test
+![Lighthouse tool mobile test resutl](documentation/images/lighthouse-mobile.PNG)
 
-Explain the process and results of HTML validation.
+###### Disktop Test
+![Lighthouse tool desktop test resutl](documentation/images/lighthouse-desktop.PNG)
 
-#### 3.2.4. CSS Validation
+#### 3.2.2. Web Accessibility Evaluation (Wave) Tool
 
-Detail CSS validation process and results.
+The result of the Wave Evaluation Tool test is presented in the figure below:
 
-#### 3.2.5. JavaScript Validation
+![Wave Evaluation Tool test resutl](documentation/images/wave-evaluation.PNG)
+
+#### 3.2.3. W3C Markup Validation Service
+
+The result of W3C Markup Validation Service for the HTML file is shown below:
+
+![W3C Markup Validation Service test resutl](documentation/images/html-w3c.PNG)
+
+#### 3.2.4. W3C CSS Validation Service
+
+The result of W3C CSS Validation Service for the CSS file is shown below:
+
+![W3C CSS Validation Service test resutl](documentation/images/css-w3c.PNG)
+
+#### 3.2.5. JSHint
 
 Discuss JavaScript validation.
 
-#### 3.2.6. Accessibility
 
-Describe how accessibility was ensured.
+#### 3.2.6. Device Test
 
-#### 3.2.7. Lighthouse Validation
+The game is tested in different devices (Mobiles, Laptops and Desktop) and different operating systems (Windows 10 and Android). The presentation on all those devices shows no apparent issue. Where applicable, the game is also tested on those devices in landscape and portrait modes.
 
-Provide details and results of Lighthouse validation.
+#### 3.2.9. Browser Test
 
-#### 3.2.8. Device Testing
+The game is tested in the following browsers:
 
-Explain how device testing was conducted and the results.
+1. Google Chrome
+2. Firefox
+3. Edge
 
-#### 3.2.9. Browser Compatibility
-
-Detail the browser compatibility checks that were performed.
+No issue is reported.
 
 ### 3.3. Bugs
 
