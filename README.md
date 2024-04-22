@@ -219,17 +219,80 @@ Explain how the website is deployed and any steps needed to deploy it to a new e
 
 ## 5. Features
 
+This section summarizes the final look of the game website. It discusses each part of the website and provide some colours each part purpose.
+
 ### 5.1. Header
 
-Describe the header component of the website.
+This first part of the game website is the header. The header presents with black font the name of the game. See the figure below:
+
+![The header of the website](documentation/images/header.PNG)
 
 ### 5.2. Main Content
 
-Detail the main content area of the website.
+The main contains three parts. Each part contains specific functionality trigged either directly by the user or by an event resulted from the user previous action.
+#### 5.2.1. The Setup Board
+
+The setup board is divided into two parts. The dashboard and the players characters. See the screenshot below.
+
+![Player character buttons](documentation/images/setupboard.png)
+
+ ##### 5.2.1.1  The Dashboard
+
+ The dashboard is responsible for leading the user as to what needs to be done or where the game is in any moment during the game play. For example, when the website is loaded, the dashboard informs the user that choosing a character is needed to start the game. See the screen shot below.
+
+ ![Dash Board Status before the game starts ](documentation/images/setupboard-dashboard-one.png)
+
+ Once the game starts the dashboard present whose turn and continue to do so until the round is concluded. See the screenshot below.
+
+  ![Dash Board Status during the game ](documentation/images/setupboard-dashboard-two.png)
+
+If either of the players wins or a tie event happens, the dashboard will present the announce the game final status. See the two screenshots below.
+
+![Dash Board Status if one of the players wins](documentation/images/setupboard-dashboard-three.png)
+
+![Dash Board Status if the game is tie](documentation/images/setupboard-dashboard-four.png)
+
+ ##### 5.2.1.2  The Players Characters
+
+ The second part consists of two buttons each represents a character to be chosen by the users. Once a user pick one of the characters the second user will automatically assign the other character. A screenshot is included her to show the first part of the setup board.
+
+ ![Players containers contains two buttons each with either X or O character](documentation/images/setupboard-playerscontainer.png)
+
+#### 5.2.2. The Game Board
+The game board contains the nine spots that shall be populated by the users with their assigned characters. See the screen shot below.
+
+ ![The game board showing the nine spots](documentation/images/gameboard.png)
+
+#### 5.2.3. The Score Board
+
+The score board consists of three parts. The first part is responsible for showing the score of each player. The second part provides a way for the user to reset the game or the round. The third part contains a hidden message that popups only when user wants to reset the game. See the screen below, the third part is hidden here.
+
+ ![The score board with its two components](documentation/images/scoreboard.png)
+
+##### 5.2.3.1 Scores
+
+Each player has its own counter to count the number of rounds a user won. This information is provided in the scores part of the score board. See the screen shot below.
+
+ ![The score counters of the scores part of the score board](documentation/images/scoreboard-scores.png)
+
+##### 5.2.3.2 Rest Buttons
+
+The second part consists of two buttons. One provides the user with possibility of resetting the game, while the other provides the players with the possibility of resetting the round without setting back the total score to zeros. See the screen shot below.
+
+ ![The round and the resetting buttons](documentation/images/scoreboard-resetbuttons.png)
+
+##### 5.2.3.3 The Reset Message
+
+The final part of the score board is the reset message. This message only appears when either of the players press the game reset buttons. It is there to make sure no player is accidently press the game reset. See the screen shot below.
+
+ ![The reset message](documentation/images/scoreboard-resetmessage.png)
 
 ### 5.3. Footer
 
-Describe the footer component.
+The last part of the website is the footer. It contains two components. The first component provides links to the author’s online pages. It is put there to facilitate a communication media for those how are interested to connect with the author to exchange ideas, collaborate on future project.
+The second component is a disclaimer stating the context within which the author develops this website. See the screen shot below.
+
+ ![The footer of the website](documentation/images/footer.png)
 
 ## 6 Credits
 
