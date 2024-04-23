@@ -132,8 +132,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function resultWinnerAnnouncement(resultStorage, winner) {
         document.getElementById("dash-board").innerText = `${winner}'s won this round!`;
         resultStorage.push(winner);
-        document.getElementById('counter-o').innerText = `Player O: ${resultStorage.filter(item => item === "O").length}`;
-        document.getElementById('counter-x').innerText = `Player X: ${resultStorage.filter(item => item === "X").length}`;
+        document.getElementById('counter-o').innerText = resultStorage.filter(item => item === "O").length;
+        document.getElementById('counter-x').innerText = resultStorage.filter(item => item === "X").length;
 
         for (let i = 0; i < Spots.length; i++) {
             Spots[i].removeEventListener('click', listenedToCharacter[i]);
@@ -175,9 +175,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     /**This function activates the modal reset message if the user wants to reset the game */
     function resetMessageActivation() {
-        resetMessage.style.display = 'block';
-        yesReset.addEventListener('click', resetTheGame);
-        noReset.addEventListener('click', returnToGame);
+        if (document.getElementById('counter-o') === 0 && document.getElementById('counter-x') === 0 ) {
+            return
+        } else {
+            resetMessage.style.display = 'block';
+            yesReset.addEventListener('click', resetTheGame);
+            noReset.addEventListener('click', returnToGame);
+        }
+
     }
     /**This function will cancel the reset order of the user if the user chooses to not execute the reset
      * order */
@@ -215,8 +220,8 @@ document.addEventListener("DOMContentLoaded", function () {
             players[i].removeEventListener('click', listenedToUser[i]);
         }
         resultStorage = Array(0);
-        document.getElementById('counter-o').innerText = `Player O: ${resultStorage.filter(item => item === "O").length}`;
-        document.getElementById('counter-x').innerText = `Player X: ${resultStorage.filter(item => item === "X").length}`;
+        document.getElementById('counter-o').innerText = resultStorage.filter(item => item === "O").length;
+        document.getElementById('counter-x').innerText = resultStorage.filter(item => item === "X").length;
         document.getElementById("dash-board").innerText = "Choose a character to start!";
         playingSpots.fill(null);
         resetMessage.style.display = 'none';
