@@ -4,7 +4,7 @@
 
 Tic Tac Toe game is an ancient board game. According to Wikipedia, the game goes back to 1300 BC [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe). The game board is divided into 3-by-3 boxes. The game is designed to be played by two persons. Each person is designated either of two characters/symbols to play with, conventionally, these are O and X. The players then take turns by placing the symbols in one of the nine boxes. Either player is able to place the player's designated symbol on three boxes arranged horizontally, vertically or diagonally is considered the game winner. In case none of the players is unable to do so, the game is then a tie.
 
-![Introduction image, the website presentation on different view screens](documentation/images/introduction.PNG)
+![Introduction image, the website presentation on different view screens](documentation/images/introduction.png)
 
 ## 2. Development Process
 
@@ -106,7 +106,7 @@ As you might have already guessed, the background image is used as the basis for
 
 The first step is to extract a pallet of candidate colors from the background image. The author used [Coolors](https://coolors.co/fdf6da-dcbf87-dcb36f-ac8144-744b1e-704116-6b350f-210e03) for that matter. The result is presented in the image below.
 
-![Color Candidate](documentation/images/coolors-pallete.PNG).
+![Color Candidate](documentation/images/coolors-pallete.png).
 
 2. Color Contrast Evaluation
 
@@ -114,7 +114,7 @@ In order to select the most valid color combination, the author uses [Contrast G
 
 [^2]: The author add the black color (#000000) to the contrast evaluation to account for the color of the text (the bank ink).
 
-![Contrast Evaluation Resutl](documentation/images/contrast-grid.PNG)
+![Contrast Evaluation Resutl](documentation/images/contrast-grid.png)
 
 3. Color Selection
 
@@ -161,28 +161,28 @@ The website went through multiple tests through out the development stage. The r
 The result of Lighthouse tool tests for both mobile and screen are presented below.
 
 ###### Mobile Test
-![Lighthouse tool mobile test resutl](documentation/images/lighthouse-mobile.PNG)
+![Lighthouse tool mobile test resutl](documentation/images/lighthouse-mobile.png)
 
 ###### Disktop Test
-![Lighthouse tool desktop test resutl](documentation/images/lighthouse-desktop.PNG)
+![Lighthouse tool desktop test resutl](documentation/images/lighthouse-desktop.png)
 
 ##### 2.5.2.2. Web Accessibility Evaluation (Wave) Tool
 
 The result of the Wave Evaluation Tool test is presented in the figure below:
 
-![Wave Evaluation Tool test resutl](documentation/images/wave-evaluation.PNG)
+![Wave Evaluation Tool test resutl](documentation/images/wave-evaluation.png)
 
 ##### 2.5.2.3. W3C Markup Validation Service
 
 The result of W3C Markup Validation Service for the HTML file is shown below:
 
-![W3C Markup Validation Service test resutl](documentation/images/html-w3c.PNG)
+![W3C Markup Validation Service test resutl](documentation/images/html-w3c.png)
 
 ##### 2.5.2.4. W3C CSS Validation Service
 
 The result of W3C CSS Validation Service for the CSS file is shown below:
 
-![W3C CSS Validation Service test resutl](documentation/images/css-w3c.PNG)
+![W3C CSS Validation Service test resutl](documentation/images/css-w3c.png)
 
 ##### 2.5.2.5. JSHint
 
@@ -225,7 +225,7 @@ This section summarizes the final look of the game website. It discusses each pa
 
 This first part of the game website is the header. The header presents with black font the name of the game. See the figure below:
 
-![The header of the website](documentation/images/header.PNG)
+![The header of the website](documentation/images/header.png)
 
 ### 5.2. Main Content
 
