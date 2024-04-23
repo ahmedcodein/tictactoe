@@ -56,8 +56,11 @@ document.addEventListener("DOMContentLoaded", function () {
      */
     function playersDeclaration(firstPlayer) {
         let secondPlayer;
-        firstPlayer === "O" ? secondPlayer = "X" : secondPlayer = "O";
-        document.getElementById("dash-board").innerText = `It is ${firstPlayer}'s turn`;
+        if (firstPlayer === "O") {
+            secondPlayer = "X";
+        } else {
+            secondPlayer = "O";
+        } document.getElementById("dash-board").innerText = `It is ${firstPlayer}'s turn`;
         return secondPlayer;
     }
     /** This function fills in the spots with characters based on the player spot choice. It also views the 
