@@ -192,20 +192,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 players[i].addEventListener('click', listenedToUser[i]);
             }
         }
-        if (resultStorage.length !== 0) {
-            for (let i = 0; i < Spots.length; i++) {
-                Spots[i].removeEventListener('click', listenedToCharacter[i]);
-            }
-            for (let i = 0; i < players.length; i++) {
-                players[i].removeEventListener('click', listenedToUser[i]);
-            }
-        }
         if (!secondPlayer) {
             for (let i = 0; i < Spots.length; i++) {
                 Spots[i].removeEventListener('click', listenedToCharacter[i]);
             }
             for (let i = 0; i < players.length; i++) {
-                players[i].removeEventListener('click', listenedToUser[i]);
+                players[i].addEventListener('click', listenedToUser[i]);
             }
         }
         return;
