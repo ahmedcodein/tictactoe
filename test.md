@@ -10,7 +10,7 @@ The result of Lighthouse tool tests for both mobile and screen are presented bel
 ###### Mobile Test
 ![Lighthouse tool mobile test resutl](documentation/images/lighthouse-mobile.png)
 
-###### Disktop Test
+###### Desktop Test
 ![Lighthouse tool desktop test resutl](documentation/images/lighthouse-desktop.png)
 
 ##### 1.2. Web Accessibility Evaluation (Wave) Tool
