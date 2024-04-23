@@ -66,3 +66,5 @@ The game is tested in the following browsers:
 3. Edge
 
 No issue is reported.
+
+Return to [readme.md](readme.md).
