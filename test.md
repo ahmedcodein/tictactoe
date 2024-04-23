@@ -67,4 +67,4 @@ The game is tested in the following browsers:
 
 No issue is reported.
 
-Return to [readme.md](readme.md).
+Return to [README.md](README.md).
