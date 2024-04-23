@@ -38,17 +38,17 @@ document.addEventListener("DOMContentLoaded", function () {
     function startTheGame(players, aPlayerClickedEvent, callback) {
         let userListenerStorage = [];
         // Check which players buttons was fired
-        for (let i = 0; i < players.length; i++) {
+        players.forEach(function(player){
             let userListenerHandler = function () {
                 if (!aPlayerClickedEvent) {
                     // Prevents any more player's selection
                     aPlayerClickedEvent = true;
-                    callback(players[i].innerText);
+                    callback(player.innerText);
                 }
             };
-            players[i].addEventListener('click', userListenerHandler);
+            player.addEventListener('click', userListenerHandler);
             userListenerStorage.push(userListenerHandler);
-        }
+        });
         listenedToUser = userListenerStorage;
     }
     /** This function declares the second player by observing the character of the first player
