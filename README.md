@@ -156,6 +156,16 @@ The list of techologies used to develop the Tic Tac Toe game of this project are
 
 The test results is summrized here in the table below. For detailed disscusions of the test please visit the [test.md](test.md) file. 
 
+| Test ID No. | Test Name | Test Result | Test Comment|
+| ----------- |---------- |------------ |------------ |
+| 1 | Google Lighthouse | No Errors/Warnings | Mobile and Desktop|
+| 2 | Web Accessibility Evaluation (Wave) Tool | No Errors/Warnings | NO Comment|
+| 3 | W3C Markup Validation Service | No Errors/Warnings | No Comment|
+| 4 | W3C CSS Validation Service | No Errors/Warnings | No Comment|
+| 5 | JSHint | Unresolved Warning | "Functions declared within loops referencing an outer scoped variable" is not resolved due to time contraint|
+| 6 | Device Test | No Errors/Warnings | Test conducted on Mobiles, Laptops and Desktop, Windows 10 and Android and where applicable: landscape and portrait modes|
+| 7 | Browser Test | No Errors/Warnings | Google Chrome, Firefox and Edge|
+
 #### 2.5.3. Bugs
 
 ##### 2.5.3.1. Fixed Bugs
