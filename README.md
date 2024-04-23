@@ -176,9 +176,44 @@ List the bugs that were identified and fixed.
 
 Mention any bugs that have not yet been fixed.
 
-## 4. Deployment
+## 4. Deployment, Clone and Fork Procedures
 
-Explain how the website is deployed and any steps needed to deploy it to a new environment.
+The author follows the following procedure for deployment:
+
+1. In the project repository go to settings
+2. Under Code and Automation, go to pages
+3. Under Build and deployment, choose to deploy from branch
+4. Under branch, select main
+5. Now select save
+6. Wait for couple of minutes to the website to go online
+
+The author follows the following procedure to clone from the GiTHub repo into Gitpod:
+
+1. Go to your repositories 
+2. Click on the new created project repository
+3. Go to the code in the upper right corner
+4. Click on the Code dropdown menu
+5. Select local 
+6. Select Clone/HTTPs
+7. Copy the url provided
+8. Open new browser tap
+9. Open your Gitpod Workspace
+10. Create new workspace
+12. Click on select new Repository
+13. Paste the url in input window
+13. Click continue
+
+For any person who is interest to work on the source code of this project, here is the procedure that needs to be followed to make a fork.
+
+1. Go to ahmedcodein repositories
+2. Click on TicTacToc repo
+3. In the upper right corener, click of fork drop down menu
+4. Click on create new fork
+5. Create new fork window opens
+6. Select the owner of the repo
+7. Add a repo name
+8. Add a discription if needed
+9. Click create fork 
 
 ## 5. Features
 
