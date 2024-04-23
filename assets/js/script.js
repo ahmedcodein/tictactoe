@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
      */
     function initiateTheGame() {
         // aPlayerClickedEvent variable is a gating mechanism to prevent new player selection
-        let aPlayerClickedEvent = false;
+        let aPlayerClickedEvent = false; // This line is intorduced in this position by the author, the original suggestion of ChatGPT is to be declared within startTheGame function
         let count = -1; // Used to count the number of clicks when the filltheSpots function is called
         startTheGame(players, aPlayerClickedEvent, function (firstPlayer) {
             secondPlayer = playersDeclaration(firstPlayer);
@@ -36,20 +36,20 @@ document.addEventListener("DOMContentLoaded", function () {
      * it declares the first player character.
      */
     function startTheGame(players, aPlayerClickedEvent, callback) {
-        let userListenerStorage = [];
+        let userListenerStorage = []; // This line is introduced by the author after being inspired by GPT solution suggested in the fillInSpots function
         // Check which players buttons was fired
-        players.forEach(function(player){
-            let userListenerHandler = function () {
+        players.forEach(function(player){ // initially was for loop, this led to jshint warning. the solution to warning  is adapted from https://github.com/dnlbowers/blackjack
+            let userListenerHandler = function () { // This line is introduced by the author after being inspired by GPT solution suggested in the fillInSpots function
                 if (!aPlayerClickedEvent) {
                     // Prevents any more player's selection
-                    aPlayerClickedEvent = true;
+                    aPlayerClickedEvent = true; // This line is suggested by ChatGPT
                     callback(player.innerText);
                 }
             };
-            player.addEventListener('click', userListenerHandler);
-            userListenerStorage.push(userListenerHandler);
+            player.addEventListener('click', userListenerHandler); // This line is introduced by the author after being inspired by GPT solution suggested in the fillInSpots function
+            userListenerStorage.push(userListenerHandler); // This line is introduced by the author after being inspired by GPT solution suggested in the fillInSpots function
         });
-        listenedToUser = userListenerStorage;
+        listenedToUser = userListenerStorage; // This line is introduced by the author after being inspired by GPT solution suggested in the fillInSpots function
     }
     /** This function declares the second player by observing the character of the first player
      * It also announce the character turn on the dashboard once, the first character is chosen
@@ -68,9 +68,9 @@ document.addEventListener("DOMContentLoaded", function () {
      * with index represents the spot position in the game board
      */
     function fillTheSpots(count, firstPlayer, secondPlayer, Spots, playingSpots, callback) {
-        let listenerStorage = [];
+        let listenerStorage = []; // This line is suggested by ChatGPT
         for (let i = 0; i < Spots.length; i++) {
-            let filledInSpotsListener = function () {
+            let filledInSpotsListener = function () { // This line is suggested by ChatGPT
                 count++;
 
                 if (count % 2 === 0 && !playingSpots[i]) {
@@ -85,10 +85,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
                 callback(playingSpots);
             };
-            Spots[i].addEventListener('click', filledInSpotsListener);
-            listenerStorage.push(filledInSpotsListener);
+            Spots[i].addEventListener('click', filledInSpotsListener); // This line is suggested by ChatGPT
+            listenerStorage.push(filledInSpotsListener); // This line is suggested by ChatGPT
         }
-        listenedToCharacter = listenerStorage;
+        listenedToCharacter = listenerStorage; // This line is suggested by ChatGPT
     }
     /** This function evaluates after each new filled spot if the winning condition is satidfied.
      * If true returen the winner, not contenue until a winner found or it is a draw when no more spots
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function gameResultEvaluation(resultStorage, filledInSpots) {
         let winner;
         let winnerFound = false;
-        const winningCombinations = [
+        const winningCombinations = [ // This line is common knowledge, appears in many similar Tic Tac Toe computer games
             [0, 1, 2],
             [3, 4, 5],
             [6, 7, 8],
@@ -108,8 +108,8 @@ document.addEventListener("DOMContentLoaded", function () {
             [2, 4, 6]
         ];
         for (let i = 0; i < winningCombinations.length; i++) {
-            let [a, b, c] = winningCombinations[i];
-            let winningConditon = (filledInSpots[a] !== null && (filledInSpots[a] === filledInSpots[b] && filledInSpots[a] === filledInSpots[c]));
+            let [a, b, c] = winningCombinations[i]; // This line is adapted from https://www.youtube.com/watch?v=oZrp3Atkz18
+            let winningConditon = (filledInSpots[a] !== null && (filledInSpots[a] === filledInSpots[b] && filledInSpots[a] === filledInSpots[c])); // This line is adapted from https://www.youtube.com/watch?v=oZrp3Atkz18
             if (winningConditon) {
                 winner = filledInSpots[a];
                 winnerFound = true;
