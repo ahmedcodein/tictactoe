@@ -294,6 +294,12 @@ The second component is a disclaimer stating the context within which the author
 
  ![The footer of the website](documentation/images/footer.png)
 
+ ### 5.4. Favicon
+
+ The last part of the page is the Favicon. The figure below shows the favicon. The original image is a screenshot of two spots filled with players characters. Then the image is converted into a favicon by using [Favicon Generator](https://www.favicon.cc/?).
+
+   ![The image of the favicon](documentation/images/favi.png)
+
 ## 6 Credits
 
 ### 6.1 References
