@@ -174,7 +174,36 @@ List the bugs that were identified and fixed.
 
 ##### 2.5.3.2. Unfixed Bugs
 
-Mention any bugs that have not yet been fixed.
+In this section, a set of unfixed bugs with explanations is provided. 
+
+1. The Reset Popup Message - No Option
+
+The bug occurrence first scenario:
+
+The bug appears if a user follows the following steps:
+
+- After playing a round or more
+- Press New Round Button
+- Then press the Game Reset button
+- On the Reset Popup Message, press No
+- The game does not allow the user to select a player to start the new round
+
+In this case, the user must re press the Round Reset button to be able to select the first player to play. There is no way for the user to know there is a need to click on the reset round to activate the player selection. This flow needs to be resolved in future versions.
+
+The bug occurrence second scenario:
+
+The bug appears if a user follows the following steps:
+
+- After playing a round or more
+- Press New Round Button
+- Select the first player
+- Click on any spot
+- Press the Game Reset button
+- On the Reset Popup Message, press No
+- The game does not allow the user to continue. The user has to start new round to proceed
+
+In this case, the user must re press the Round Reset button to be able to restard the round and be able to play agian. The players lose in this case what they have already played in the current round. In additon, there is no way for the user to know that the only way to proceed is by pressing the round reset button. This flow needs to be resolved in future versions.
+
 
 ## 4. Deployment, Clone and Fork Procedures
 
