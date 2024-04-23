@@ -204,6 +204,19 @@ The bug appears if a user follows the following steps:
 
 In this case, the user must re press the Round Reset button to be able to restard the round and be able to play agian. The players lose in this case what they have already played in the current round. In additon, there is no way for the user to know that the only way to proceed is by pressing the round reset button. This flow needs to be resolved in future versions.
 
+2. Peculiar Round Result scenarios
+
+There are two scenarios where the game logic doubls the score of the win, i.e. instead of giving the winner one point, it gives the winner 2 points. 
+Such scenario happens when both players decide to break the basic principle of the game rule. That is neither playing for winning nor for tie. Below two screenshots show these scenarios and an explanation as to how this could happen.
+
+![Peculiar Round Result first scenario](documentation/images/peculiar-game-result-scenario-one.png)
+
+
+![Peculiar Round Result second scenario](documentation/images/peculiar-game-result-scenario-two.png)
+
+As it can be seen from the figures above, the issue happens when the same character occupies two diagonals. Such situation can only happen when both players decide not to compete. It happens when the first player chooses the first spot or the second spot and then the players continue choosing the following the outer spots sequentially in turns. The final spot will be the one in the middles which is exactly the one the completes the diagonal. Try yourself.
+
+The author does not believe this as a bug because this scenario does not happen in a real game competing setting.
 
 ## 4. Deployment, Clone and Fork Procedures
 
