@@ -354,6 +354,17 @@ The second component is a disclaimer stating the context within which the author
 
    ![The image of the favicon](documentation/images/favi.png)
 
+## 6 Future Work
+
+The author suggests the following list to be considered as future work to be add to the game to make it more appealing to the user.
+
+1. Resolve all the unfixed bugs appear in the unfixed bug subsection
+2. Reduce the JavaScript code by removing any duplications. Then, combine the representative lines in standalone functions.
+3. Some of the getElementsBy.. or getElementById.. are repeatedly used in multiple positions. Reducing them by declaring a dedicated variable can reduce the verbose in the code.
+4. Some of the CSS properties are repeatedly used in multiple rules. Defining them in single classes can reduce the verbose of the style sheet.
+5. Make the game possible to be played with the computer
+6. Make the game possible to be played online between two players
+
 ## 6 Credits
 
 ### 6.1 References
