@@ -168,6 +168,8 @@ The test results is summrized here in the table below. For detailed disscusions 
 
 #### 2.5.3. Bugs
 
+This section provides a detailed account of most prominent bugs that are successfully fixed. Moreover, the section contains an additional subsection that covers the unfixed bugs.
+
 ##### 2.5.3.1. Fixed Bugs
 
 The following bugs are resolved. the list of bugs presented in accordance to their time of occurrence over the course of the game development. The list does not cover the complete bugs the author encountered during the development but rather the most prominent ones.
