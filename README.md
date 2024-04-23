@@ -170,7 +170,19 @@ The test results is summrized here in the table below. For detailed disscusions 
 
 ##### 2.5.3.1. Fixed Bugs
 
-List the bugs that were identified and fixed.
+The following bugs are resolved. the list of bugs presented in accordance to their time of occurrence over the course of the game development. The list does not cover the complete bugs the author encountered during the development but rather the most prominent ones.
+
+Important Note: Couple of these bugs is resolved by inserting the function in question into ChatGPT console. The ChatGPT then provides the resolution.
+
+| Bug ID No. | Bug Position | Bug Discription | Bug Solution | Comment|
+| -----------| ----------- |---------- |------------ |------------ |
+|1| startTheGame function | Buttons are not mutually Exclusive | Introducing a gating mechanism by invoking a variable that takes true and false values to deactivating the other button | The solution is suggested by ChatGPt|
+|2| fillTheSpots function | removeEventListener does not work properly leading to double readings of the playingsSpots array | Declare an anonymous function as variable. The declaration must happen outside handler of the eventlistener. Store the result of listening in an array, when remove the event listener use the stored array as the eventHandler of removeEvent listener as apposed to the declared variable| The author declares the anonymous function, but the problem persists, the reset of the solution is suggested by ChatGPt| 
+|3| gameResultEvaluation | The outputs of the function is always either true or undifined preventing the author from extracting draw result | Intreducing double if condition, winner-not-found and drawCondition | |
+|4| startTheGame function | removeEventListener does not work properly leading to double readings of the playingsSpots array | Declare an anonymous function as variable. The declaration must happen outside handler of the eventlistener. Store the result of listening in an array, when remove the event listener use the stored array as the eventHandler of removeEvent listener as apposed to the declared variable| The solution is inspired by the solution provided by ChatGPT presetned in Bug Id No. 2| 
+|5| resetRoundFunction | For the first game load and once a user clicks the reset button, an error appears complaining about listenedToCharacter is not defined | Deactivating the reset button if the listendToCharacter is not an object | |
+|6|  resetRoundFunction | similar to bug no. 5 | similar to bug no. 5 | |
+|7| returnToGame | although the function performs the return as expected, multiple game senarios are not covered, e.g. what if no player is selected | Chain of multiple if statements are introduced to account for each senario | |
 
 ##### 2.5.3.2. Unfixed Bugs
 
