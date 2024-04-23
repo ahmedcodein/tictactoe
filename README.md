@@ -186,8 +186,25 @@ The result of W3C CSS Validation Service for the CSS file is shown below:
 
 ##### 2.5.2.5. JSHint
 
-Discuss JavaScript validation.
+The following captures show the resutl of jshint test result before fixing the warnings.
 
+JSHint test result before the fixing the warnings
+
+![JShint test result](documentation/images/jshint.png)
+
+JSHint test result after fixing the warnings
+
+![JShint test result](documentation/images/jshint2.png)
+
+###### Resolution Discussion
+
+1. The undefined variables warnings are solved by declaring the variables using LET keyward for variable declaration.
+2. The first warrning of ""Functions declared within loops referencing an outer scoped variable" is resolved using forEach loop instead of for loop. The solution is adapted from [BlackJack GitHub Repo](https://github.com/dnlbowers/blackjack).
+Expected an assignment or functin call warning is solved by using if statement.
+
+###### Unresolved warning:
+
+The second warning of "Functions declared within loops referencing an outer scoped variable" is not resolved due to the complexty of this function. The solution would require more time than what is availble to the author for project submission. Hence, this is left for future task. Nevertheless, the starting point is to replace the for loop to forEach loop.
 
 ##### 2.5.2.6. Device Test
 
