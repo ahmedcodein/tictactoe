@@ -152,73 +152,9 @@ The list of techologies used to develop the Tic Tac Toe game of this project are
 6. Chrome DevTools: Web Development Tools for testing and debugging
 7. Other testing tools: Wave, Lighthouse, W3C and JSHint
 
-#### 2.5.2. Website Tests
+#### 2.5.2 Test Resutls
 
-The website went through multiple tests through out the development stage. The results of these tests provided in this section, however, cover only the final round of tests. 
-
-##### 2.5.2.1 Google Lighthouse
-
-The result of Lighthouse tool tests for both mobile and screen are presented below.
-
-###### Mobile Test
-![Lighthouse tool mobile test resutl](documentation/images/lighthouse-mobile.png)
-
-###### Disktop Test
-![Lighthouse tool desktop test resutl](documentation/images/lighthouse-desktop.png)
-
-##### 2.5.2.2. Web Accessibility Evaluation (Wave) Tool
-
-The result of the Wave Evaluation Tool test is presented in the figure below:
-
-![Wave Evaluation Tool test resutl](documentation/images/wave-evaluation.png)
-
-##### 2.5.2.3. W3C Markup Validation Service
-
-The result of W3C Markup Validation Service for the HTML file is shown below:
-
-![W3C Markup Validation Service test resutl](documentation/images/html-w3c.png)
-
-##### 2.5.2.4. W3C CSS Validation Service
-
-The result of W3C CSS Validation Service for the CSS file is shown below:
-
-![W3C CSS Validation Service test resutl](documentation/images/css-w3c.png)
-
-##### 2.5.2.5. JSHint
-
-The following captures show the result of jshint test result before fixing the warnings.
-
-- JSHint test result before the fixing the warnings
-
-![JShint test result](documentation/images/jshint.png)
-
-- JSHint test result after fixing the warnings
-
-![JShint test result](documentation/images/jshint2.png)
-
-###### Resolved Warnings
-
-1. The undefined variables warnings are solved by declaring the variables using LET keyward for variable declaration.
-2. The first warrning of ""Functions declared within loops referencing an outer scoped variable" is resolved using forEach loop instead of for loop. The solution is adapted from [BlackJack GitHub Repo](https://github.com/dnlbowers/blackjack).
-3. Expected an assignment or functin call warning is solved by using if statement.
-
-###### Unresolved Warning:
-
-The second warning of "Functions declared within loops referencing an outer scoped variable" is not resolved due to the complexty of this function. The solution would require more time than what is availble to the author for project submission. Hence, this is left for future task. Nevertheless, the starting point is to replace the for loop to forEach loop.
-
-##### 2.5.2.6. Device Test
-
-The game is tested in different devices (Mobiles, Laptops and Desktop) and different operating systems (Windows 10 and Android). The presentation on all those devices shows no apparent issue. Where applicable, the game is also tested on those devices in landscape and portrait modes.
-
-##### 2.5.2.9. Browser Test
-
-The game is tested in the following browsers:
-
-1. Google Chrome
-2. Firefox
-3. Edge
-
-No issue is reported.
+The test results is summrized here in the table below. For detailed disscusions of the test please visit the [test.md](test.md) file. 
 
 #### 2.5.3. Bugs
 
