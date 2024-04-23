@@ -43,7 +43,7 @@ This section describes the general requirements of the game. The author construc
 4. The game design must record the score of winning and present it to the user
 5. A section in the game page that leads to the author online pages[^1]
 
-[^1]: Although, the last design requirement is not related to the owner’s or visitor’s objective nor to the game design requirements, it is related to sole purpose of pursuing this course, see {project-objective}. That is connect with people who are sharing the same interests to exchange ideas, pursue future project collaborations or simply get feedback for improvement on the author’s work.
+[^1]: Although, the last design requirement is not related to the owner’s or visitor’s objective nor to the game design requirements, it is related to sole purpose of pursuing this course, see Project Objective section. That is to connect with people who share the same interests with author in order to exchange ideas, pursue future project collaborations or simply get feedback for improvement on the author’s work.
 
 ### 2.4. Planning
 
@@ -219,7 +219,7 @@ Explain how the website is deployed and any steps needed to deploy it to a new e
 
 ## 5. Features
 
-This section summarizes the final look of the game website. It discusses each part of the website and provide some colours each part purpose.
+This section summarizes the final look of the game website. It discusses each part of the website and provides some colors to its purpose.
 
 ### 5.1. Header
 
