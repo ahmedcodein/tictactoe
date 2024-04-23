@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let resultStorage = Array(0);
     let winnerFound;
     let secondPlayer;
+    let listenedToCharacter;
+    let listenedToUser;
     roundReset.addEventListener('click', resetRoundFunction);
     gameReset.addEventListener('click', resetGameFunction);
     initiateTheGame();
@@ -115,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!winnerFound && drawCondition) {
             resultDrawAnnouncement();
         }
-        return winnerFound
+        return winnerFound;
     }
     /** This function is only activated  when the round result is a draw, it then view the announcement
      * in the dash board
