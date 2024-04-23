@@ -306,8 +306,9 @@ The second component is a disclaimer stating the context within which the author
 6. JavaScript Tutorial | Creating a Modal with JavaScript | Part 1, [
 Academind
 ](https://www.youtube.com/watch?v=o5ffh3KUaTM).
-7. [W3 School](https://www.w3schools.com/css/).
-8. [Wikipedia](https://en.wikipedia.org).
+7. David Bowers, BlackJack game, [BlackJack GitHub Repo](https://github.com/dnlbowers/blackjack).
+8. [W3 School](https://www.w3schools.com/css/).
+9. [Wikipedia](https://en.wikipedia.org).
 
 ### 6.2. Content and Tools
 
@@ -318,6 +319,10 @@ Academind
 5. [Coolors](https://coolors.co/fdf6da-dcbf87-dcb36f-ac8144-744b1e-704116-6b350f-210e03).
 6. [Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23fdf6daff%3B%0D%0A%23dcbf87ff%3B%0D%0A%23dcb36fff%3B%0D%0A%23ac8144ff%3B%0D%0A%23744b1eff%3B%0D%0A%23704116ff%3B%0D%0A%236b350fff%3B%0D%0A%23210e03ff%3B%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp).
 7. [Favicon Generator](https://www.favicon.cc/?).
+8. [Balsamiq Wireframes](https://balsamiq.com/wireframes/desktop/).
+9. [Image Resizer](https://redketchup.io/image-resizer).
+10. [Markdown Guide](https://www.markdownguide.org/cheat-sheet/).
+11. [Am I Responsive?](https://ui.dev/amiresponsive).
 
 
 ### 6.4. Acknowledgement
