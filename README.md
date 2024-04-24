@@ -207,6 +207,7 @@ Important Note: Couple of these bugs is resolved by inserting the function in qu
 |6|  resetRoundFunction | similar to bug no. 5 | similar to bug no. 5 | |
 |7| returnToGame | although the function performs the return as expected, multiple game senarios are not covered, e.g. what if no player is selected | Chain of multiple if statements are introduced to account for each senario | |
 |8| returnToGame | The game does not allow the user to select a player to start the new round if no reset is selected. The game does not allow the user to continue if the no is pressed in the middle of the round. The user has to start new round to proceed | improve the logic of the multiple if statements inside the function | |
+|9| fillTheSpots function | If a player clicks twice on a spot, the next player when clicks, the newly selected spot will show the earlier player's character | include once: true to the addEventlisenter | |
 
 ##### 2.5.3.2. Unfixed Bugs
 
