@@ -50,7 +50,7 @@ The following captures show the result of jshint test result before fixing the w
 1. The undefined variables warnings are solved by declaring the variables using LET keyward for variable declaration.
 2. The first warrning of ""Functions declared within loops referencing an outer scoped variable" is resolved using forEach loop instead of for loop. The solution is adapted from [BlackJack GitHub Repo](https://github.com/dnlbowers/blackjack).
 3. Expected an assignment or functin call warning is solved by using if statement.
-4. The second warning of "Functions declared within loops referencing an outer scope variable" is resolved using forEach loop instead of for loop. The major difference between resolving this warning and the warning in 3 is the user of forEach with index. The solution is adapted from:
+4. The second warning of "Functions declared within loops referencing an outer scope variable" is resolved using forEach loop instead of for loop. The major difference between resolving this warning and the warning in 3 is in the use of forEach with index. The solution is adapted from:
 
     - [JavaScript forEach() – JS Array For Each Loop Example by Joel Olawanle](https://www.freecodecamp.org/news/javascript-foreach-js-array-for-each-example/#:~:text=how%20they%20work.-,JavaScript%20forEach(),can%20be%20of%20any%20datatype.)
     - [BlackJack GitHub Repo](https://github.com/dnlbowers/blackjack).
