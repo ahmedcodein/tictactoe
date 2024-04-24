@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
     /**This function activates the modal reset message if the user wants to reset the game */
     function resetMessageActivation() {
         if (document.getElementById('counter-o') === 0 && document.getElementById('counter-x') === 0) {
-            return
+            return;
         } else {
             resetMessage.style.display = 'block';
             yesReset.addEventListener('click', resetTheGame);
