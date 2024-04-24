@@ -158,12 +158,15 @@ document.addEventListener("DOMContentLoaded", function () {
         secondPlayer = false;
         initiateTheGame();
     }
-    /** This function is first check if a reset message prsentation is needed, if yes it then activates
+    /** This function is first check if a reset message activation is needed, if yes it then activates
      * the message activiation function, if not, no action.
      */
     function resetGameFunction() {
+        let resetMessageActivationCondition = playingSpots.filter(item => item === null).length === playingSpots.length && document.getElementById('counter-o').innerText === "0" && document.getElementById('counter-x').innerText === "0";
         if (typeof listenedToCharacter !== "object") {
             return;
+        } else if (resetMessageActivationCondition) {
+            return
         } else {
             resetMessageActivation();
             for (let i = 0; i < Spots.length; i++) {
@@ -176,14 +179,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     /**This function activates the modal reset message if the user wants to reset the game */
     function resetMessageActivation() {
-        if (document.getElementById('counter-o') === 0 && document.getElementById('counter-x') === 0) {
-            return;
-        } else {
-            resetMessage.style.display = 'block';
-            yesReset.addEventListener('click', resetTheGame);
-            noReset.addEventListener('click', returnToGame);
-        }
-
+        resetMessage.style.display = 'block';
+        yesReset.addEventListener('click', resetTheGame);
+        noReset.addEventListener('click', returnToGame);
     }
     /**This function will cancel the reset order of the user if the user chooses to not execute the reset
      * order */
