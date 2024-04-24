@@ -352,13 +352,14 @@ The second component is a disclaimer stating the context within which the author
 
 ## 4 Future Work
 
-The author suggests the following list to be considered as future work.
+The author suggests the following list to be considered as future work. The list is arranged with respect to its relevant priority. More weight is generally given to the aspects that support code readability and maintainability.
 
-1. Reduce the JavaScript code by removing any duplications. Then, combine the representative lines and include them in standalone functions.
+1. Reduce the number of global variables.
+2. Reduce the JavaScript code by removing any duplications. Then, combine the representative lines and include them in standalone functions.
 3. Some of the getElementsBy.. or getElementById.. are repeatedly used in multiple positions. Reducing them by declaring a dedicated variable can reduce the verbose in the code.
 4. Some of the CSS properties  with similar values are repeatedly used in multiple rules. Defining them in single classes can reduce the verbose of the style sheet.
-5. Make the game possible to be played with the computer
-6. Make the game possible to be played remotly online between two players
+5. Make the game possible to be played with the computer.
+6. Make the game possible to be played remotly online between two players.
 
 ## 5 Credits
 
