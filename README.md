@@ -220,7 +220,7 @@ Such scenario happens when both players decide to break the basic principle of t
 
 As it can be seen from the screenshots above, the issue happens when the same character occupies two diagonals or one vertical and one horizontal. Such situation can only happen when both players decide not to compete. It happens when the first player chooses either the first spot or the second spot. Then the players take turns choosing only the outer spots sequentially. The last empty spot will be the one in the middle. That is exactly the one the completes either the two diagonals and one vertical and one horizontal. Try it yourself.
 
-## 4. Deployment, Clone and Fork Procedures
+## 3. Deployment, Clone and Fork Procedures
 
 The following procedure is implemented for deployment:
 
@@ -259,27 +259,27 @@ For any person interested to work on the source code of this project, here is th
 8. Add a discription if needed
 9. Click create fork 
 
-## 5. Features
+## 4. Features
 
 This section summarizes the final look of the game website. It discusses each part of the website and provides some colors to its purpose.
 
-### 5.1. Header
+### 4.1. Header
 
 This first part of the game website is the header. The header presents the name of the game in black font. See the figure below:
 
 ![The header of the website](documentation/images/header.png)
 
-### 5.2. Main
+### 4.2. Main
 
 The main contains three parts. Each part contains specific functionality trigged either directly by the user or by an event resulted from the user previous action.
 
-#### 5.2.1. The Setup Board
+#### 4.2.1. The Setup Board
 
 The setup board is divided into two parts. The dashboard and the players characters. See the screenshot below.
 
 ![Player character buttons](documentation/images/setupboard.png)
 
- ##### 5.2.1.1  The Dashboard
+ ##### 4.2.1.1  The Dashboard
 
  The dashboard is responsible for leading the user as to what needs to be done or where the game is in any moment during the game play. For example, when the website is loaded, the dashboard informs the user that choosing a character is needed to start the game. See the screen shot below.
 
@@ -295,55 +295,55 @@ If either of the players wins or a tie event happens, the dashboard will announc
 
 ![Dash Board Status if the game is tie](documentation/images/setupboard-dashboard-four.png)
 
- ##### 5.2.1.2  The Players Characters
+ ##### 4.2.1.2  The Players Characters
 
  The second part consists of two buttons each represents a character to be chosen by the users. Once a user pick one of the characters the second user will automatically be assigned the other character. A screenshot is included her to show the first part of the setup board.
 
  ![Players containers contains two buttons each with either X or O character](documentation/images/setupboard-playerscontainer.png)
 
-#### 5.2.2. The Game Board
+#### 4.2.2. The Game Board
 The game board contains the nine spots that shall be populated by the users assigned characters. See the screen shot below.
 
  ![The game board showing the nine spots](documentation/images/gameboard.png)
 
-#### 5.2.3. The Score Board
+#### 4.2.3. The Score Board
 
 The score board consists of three parts. The first part is responsible for showing the score of each player. The second part provides a way for the user to reset the game or reset the round. The third part contains a hidden message that popups only when user wants to reset the game. The latter part is added at later stages of the development. Hence, it does not appear in the Wireframes subsection. See the screen below, the third part is hidden here.
 
  ![The score board with its two components](documentation/images/scoreboard.png)
 
-##### 5.2.3.1 Scores
+##### 4.2.3.1 Scores
 
 Each player has its own counter to count the number of rounds a user won. This information is provided in the scores part of the score board. See the screen shot below.
 
  ![The score counters of the scores part of the score board](documentation/images/scoreboard-scores.png)
 
-##### 5.2.3.2 Rest Buttons
+##### 4.2.3.2 Rest Buttons
 
 The second part consists of two buttons. One provides the user with the possibility of resetting the game, while the other provides the players with the possibility of resetting the round without setting back the total score to zeros. See the screen shot below.
 
  ![The round and the resetting buttons](documentation/images/scoreboard-resetbuttons.png)
 
-##### 5.2.3.3 The Reset Message
+##### 4.2.3.3 The Reset Message
 
 The final part of the score board is the reset message. This message only appears when either of the players presses the game reset buttons. It is there to make sure no player is accidently press the game reset. See the screen shot below.
 
  ![The reset message](documentation/images/scoreboard-resetmessage.png)
 
-### 5.3. Footer
+### 4.3. Footer
 
 The last part of the website body is the footer. It contains two components. The first component provides links to the author’s online pages. It is put there to facilitate a communication media for those how are interested to connect with the author to exchange ideas, learn from each other or collaborate on future projects.
 The second component is a disclaimer stating the context within which the author develops this website. See the screen shot below.
 
  ![The footer of the website](documentation/images/footer.png)
 
- ### 5.4. Favicon
+ ### 4.4. Favicon
 
  The last part of the page is the Favicon. The figure below shows the favicon. The original image is a screenshot of two spots filled with players characters. Then the image is converted into a favicon by using [Favicon Generator](https://www.favicon.cc/?).
 
    ![The image of the favicon](documentation/images/favi.png)
 
-## 6 Future Work
+## 5 Future Work
 
 The author suggests the following list to be considered as future work.
 
@@ -353,9 +353,9 @@ The author suggests the following list to be considered as future work.
 5. Make the game possible to be played with the computer
 6. Make the game possible to be played remotly online between two players
 
-## 7 Credits
+## 6 Credits
 
-### 7.1 References
+### 6.1 References
 
 1. Code institute Learning Materials.
 2. Code Institute Walkthrough projec: Loving Math.
@@ -370,7 +370,7 @@ Academind
 9. [W3 School](https://www.w3schools.com/css/).
 10. [Wikipedia](https://en.wikipedia.org).
 
-### 7.2. Content and Tools
+### 6.2. Content and Tools
 
 1. The Background image is generated by [ChatGPT](https://chat.openai.com/auth/login?sso)
 2. The icons of the footer is downloaded from Font Awesome, [Font Awesome](https://fontawesome.com/).
@@ -385,7 +385,7 @@ Academind
 11. [Am I Responsive?](https://ui.dev/amiresponsive).
 
 
-### 7.3. Acknowledgement
+### 6.3. Acknowledgement
 
 I would like to express my gratitude to Mr. David Bowers for his outstanding mentorship. His inputs, feedback and guidance are invaluable. I am looking forward to continuing working with him on the upcoming projects.
 I would also like to pass my sincere appreciations to all CI students who have reviewed my project and saved some of their valuable time to write me their views and improvement suggestions. The same sentiment goes to all my friends and family who have provided their suppot and reviewed the project and for provisioning their feedback on the website.
