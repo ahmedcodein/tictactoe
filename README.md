@@ -8,7 +8,15 @@ Tic Tac Toe game is an ancient board game. According to Wikipedia, the game goes
 
 ## 2. Development Process
 
-The process followed by the author consists of five phases. These phases are presented below with a detailed account of each phase is presented in the subsequent sections.
+The process followed by the author consists of five phases, these are:
+
+1. Research
+2. Objective
+3. Requirements Definition
+4. Planning
+5. Execution
+
+These phases are presented below with a detailed account of each phase is presented in the subsequent sections.
 
 ### 2.1.Research and Selection Criteria
 
