@@ -185,52 +185,24 @@ Important Note: Couple of these bugs is resolved by inserting the function in qu
 |5| resetRoundFunction | For the first game load and once a user clicks the reset button, an error appears complaining about listenedToCharacter is not defined | Deactivating the reset button if the listendToCharacter is not an object | |
 |6|  resetRoundFunction | similar to bug no. 5 | similar to bug no. 5 | |
 |7| returnToGame | although the function performs the return as expected, multiple game senarios are not covered, e.g. what if no player is selected | Chain of multiple if statements are introduced to account for each senario | |
+|7| returnToGame | The game does not allow the user to select a player to start the new round if no reset is selected and The game does not allow the user to continue if the no is pressed in the middle of the round. The user has to start new round to proceed | imporove the logic of the multiple if statements inside the function | |
 
 ##### 2.5.3.2. Unfixed Bugs
 
-In this section, a set of unfixed bugs with explanations is provided. 
+No bugs are observed after multiple tests and bug fixes. However, the author observes peculiar game scenarios. Although the author does not consider these as bug, he decides to mention here and give some explanation. 
+The reason the author believes this is not a bug, is because the scenario is not based on a realistic players' choices. Hence, it should not not occur in real game competing setting.
 
-1. The Reset Popup Message - No Option
+1. Peculiar Round Result scenarios
 
-The bug occurrence first scenario:
-
-The bug appears if a user follows the following steps:
-
-- After playing a round or more
-- Press New Round Button
-- Then press the Game Reset button
-- On the Reset Popup Message, press No
-- The game does not allow the user to select a player to start the new round
-
-In this case, the user must re press the Round Reset button to be able to select the first player to play. There is no way for the user to know there is a need to click on the reset round to activate the player selection. This flow needs to be resolved in future versions.
-
-The bug occurrence second scenario:
-
-The bug appears if a user follows the following steps:
-
-- After playing a round or more
-- Press New Round Button
-- Select the first player
-- Click on any spot
-- Press the Game Reset button
-- On the Reset Popup Message, press No
-- The game does not allow the user to continue. The user has to start new round to proceed
-
-In this case, the user must re press the Round Reset button to be able to restard the round and be able to play agian. The players lose in this case what they have already played in the current round. In additon, there is no way for the user to know that the only way to proceed is by pressing the round reset button. This flow needs to be resolved in future versions.
-
-2. Peculiar Round Result scenarios
-
-There are two scenarios where the game logic doubls the score of the win, i.e. instead of giving the winner one point, it gives the winner 2 points. 
-Such scenario happens when both players decide to break the basic principle of the game rule. That is neither playing for winning nor for tie. Below two screenshots show these scenarios and an explanation as to how this could happen.
+There are two scenarios where the game logic doubls the score of the win. In other words, instead of giving the winner one point, it gives the winner 2 points. 
+Such scenario happens when both players decide to break the basic principle of the game rule. That is neither playing for winning nor for tie. Below two screenshots show these scenarios and an explanation as to how this might happen.
 
 ![Peculiar Round Result first scenario](documentation/images/peculiar-game-result-scenario-one.png)
 
 
 ![Peculiar Round Result second scenario](documentation/images/peculiar-game-result-scenario-two.png)
 
-As it can be seen from the figures above, the issue happens when the same character occupies two diagonals. Such situation can only happen when both players decide not to compete. It happens when the first player chooses the first spot or the second spot and then the players continue choosing the following the outer spots sequentially in turns. The final spot will be the one in the middles which is exactly the one the completes the diagonal. Try yourself.
-
-The author does not believe this as a bug because this scenario does not happen in a real game competing setting.
+As it can be seen from the screenshots above, the issue happens when the same character occupies two diagonals. Such situation can only happen when both players decide not to compete. It happens when the first player chooses either the first spot or the second spot. Then the players take turns choosing only the outer spots sequentially. The last empty spot will be the one in the middle. That is exactly the one the completes either the two diagonals and one vertical and one horizontal. Try it yourself.
 
 ## 4. Deployment, Clone and Fork Procedures
 
