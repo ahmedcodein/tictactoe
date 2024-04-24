@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
         resetMessage.style.display = 'none';
         if (!winnerFound) {
             for (let i = 0; i < Spots.length; i++) {
-                Spots[i].addEventListener('click', listenedToCharacter[i]);
+                Spots[i].addEventListener('click', listenedToCharacter[i], {once : true});
             }
             for (let i = 0; i < players.length; i++) {
                 players[i].addEventListener('click', listenedToUser[i]);
@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         if (secondPlayer && playingSpots.filter(item => item === null).length === playingSpots.length) {
             for (let i = 0; i < Spots.length; i++) {
-                Spots[i].addEventListener('click', listenedToCharacter[i]);
+                Spots[i].addEventListener('click', listenedToCharacter[i], {once : true});
             }
             for (let i = 0; i < players.length; i++) {
                 players[i].removeEventListener('click', listenedToUser[i]);
