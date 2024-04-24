@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
                 callback(playingSpots);
             };
-            spot.addEventListener('click', filledInSpotsListener); // This line is suggested by ChatGPT
+            spot.addEventListener('click', filledInSpotsListener, {once : true}); // This line is suggested by ChatGPT
             listenerStorage.push(filledInSpotsListener); // This line is suggested by ChatGPT
         });
         listenedToCharacter = listenerStorage; // This line is suggested by ChatGPT
