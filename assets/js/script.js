@@ -197,6 +197,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 players[i].addEventListener('click', listenedToUser[i]);
             }
         }
+        if (secondPlayer && playingSpots.filter(item => item === null).length === playingSpots.length) {
+            for (let i = 0; i < Spots.length; i++) {
+                Spots[i].addEventListener('click', listenedToCharacter[i]);
+            }
+            for (let i = 0; i < players.length; i++) {
+                players[i].removeEventListener('click', listenedToUser[i]);
+            }
+        }
         if (!secondPlayer) {
             for (let i = 0; i < Spots.length; i++) {
                 Spots[i].removeEventListener('click', listenedToCharacter[i]);
