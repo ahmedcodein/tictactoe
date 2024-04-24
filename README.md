@@ -28,7 +28,7 @@ Among the 10 candidates presented in the article, the author chooses to move wit
 
 ### 2.2. Project Objective
 
-From the author's perspective, the main goal of developing this game is to become familiar with JavaScript programming and its interactions with HTML DOM and the CSS.
+The second phase of the project is project objective definition. From the author's perspective, the main goal of developing this game is to become familiar with JavaScript programming and its interactions with HTML DOM and the CSS.
 
 #### 2.2.1. Website Owner Objectives
 
@@ -37,35 +37,35 @@ The owner objective is to build an online game that is easy for the user to:
 - Understand
 - Interface with 
 
-Finally the game should also be combined with some sort of challenge presented by score accumulation.
+The game should also be combined with some sort of challenge reflected by score accumulation.
 
 #### 2.2.2. Website Visitor Objectives
 
-User objective converges with the site owner's in the sense of finding an online game that is easy to interact with. In addition, teh game is cabable of provisioning some challenge while playing the game. This can be done by simply accumulating a score when played with a friend. 
+In addition, the game is capable of provisioning some challenge while playing the game. This can be done by simply accumulating a score when played with a friend.
 
 ### 2.3. Website Requirements
 
-This section describes the general requirements of the game. The author constructs these requirements by translating the aspects briefly reviewed in the previous sections. Subsequently, the author constructs five general design requirements, summarized below:
+The third phase of the project is related to requirements definition. In this section, the author describes the general requirements of the game. The author constructs these requirements by translating the aspects briefly reviewed in the previous sections. Subsequently, the author constructs five general design requirements, summarized below:
 
-1. The game design must signal some ancient characteristics to reflect a general feeling about the game origin.
+1. The game design look must signal some ancient characteristics to reflect a general feeling about the game origin.
 2. The game design consists of three major parts: 
-    - Two players each has a symbole of either X or O.
-    - A 3-x-3 boxes represent the game board
-    - A players' score board to track the records of winning
+    - Two players each has a symbol of either X or O.
+    - A 3-x-3 boxes represent the game board.
+    - A players' score board to track the records of winning.
 3. As much as possible, the game design must be simple and easy to navigate.
-4. The game design must record the score of winning and present it to the user
-5. A section in the game page that leads to the author online pages[^1]
+4. The game design must record the score of winning and present it to the user.
+5. A section in the game page that leads to the author online pages [^1].
 
-[^1]: Although, the last design requirement is not related to the owner’s or visitor’s objectives nor to the game design requirements, it is related to the sole purpose of pursuing this course, see Project Objective section. That is to connect with people who share the same interests with the author. In order to learn from other people, exchange ideas, pursue future project collaborations or simply get feedback for improvement on the author’s work.
+[^1]: The last requirement is not related to the owner’s or visitor’s objectives nor to the game design requirements. It is, however, related to the sole purpose of pursuing this course, see Project Objective section. That is to connect with people who share the same interests with the author. That is in order to learn from other people, exchange ideas, pursue future project collaborations or simply get feedback for improvement on the author’s work.
 
 ### 2.4. Planning
 
-This section describes the planning phase of the project. The planning phase consisits of three sub-phases:
+This section describes the fourth phase, the planning phase, of the project. The planning phase consisits of three sub-phases:
 - Wireframes/HTML structure
 - Styling
 - Game Logic
 
-These sub-phases is desicribed in the following subsections. One can think of the subsequent discriptions as a detailed path as to how each of the 5 requirements presented in the previous section is trasformed into a tangable object, i.e the game website.
+These sub-phases is desicribed in the following subsections. One can think of the subsequent discriptions as a detailed path as to how each of the 5 requirements presented in the previous section is to be trasformed into a tangable object, i.e the game website.
 
 ==During the execution phase of this project, the author deviated a bit from the presented plan in this section. The pivot is related to converting the confirm method when a user presses the reset button to a modal dialog box. As such, the following subsections does not cover this issue since it was not part of the planning. However, the author provides some details on this in the feature section of this report==.  
 
@@ -91,7 +91,7 @@ Using Balsamiq Wireframes, the Game page is presented in three different viewing
 
 ##### 2.4.1.2 Preliminary structure of the HTML page
 
-Following the wireframes' layout presented on above subsection, the high-level html structure is constructed. The structure is shown in the image below. 
+Following the wireframes' layout presented above, the high-level html structure is constructed. The structure is shown in the image below. 
 
 ![Website's HTML structure](documentation/images/html-structure.png)
 
@@ -99,7 +99,7 @@ As shown in the figure above, the HTML structure is divided into three parts:
 
 - Header: The header contains the title of the game.
 - Main: The main contains three sections, Setup Board, Game Board and Score board.
-- Footer: The footer contains two types of information; these are; links to the author's LinkedIn and GitHub websites and second type is general disclaimer.
+- Footer: The footer contains two types of information; these are; links to the author's LinkedIn and GitHub websites and the second type of information is a general disclaimer.
 
 ##### 2.4.1.3. Preliminary naming used for HTML elements IDs and Classes
 
@@ -109,11 +109,11 @@ The following screenshot is devoted to give additional resolution to the previou
 
 #### 2.4.2. Styling
 
-One of the website requements is to present the game with an ancient charactertic touch. This is to refelct the history of the game origin. Towards achieving this, the author opts to present the game as it is played on an old paper or leather scroll background. To constuct such background, the author uses [ChatGPT](https://chat.openai.com/auth/login?sso) to create the background. The players then use black ink to handright the game board with symboles and later the score as the game goes.
+One of the website requements is to present the game with an ancient characteristic touch. This is in order to refelct the history of the game origin. Towards achieving this, the author opts to present the game as it is played on an old paper or on a leather scroll background. To constuct such background, the author uses [ChatGPT](https://chat.openai.com/auth/login?sso) to create the background image. The players then use black ink to handright the game board with symboles and later to record the score as the game goes.
 
 ##### 2.4.2.1 Color
 
-As you might have already guessed, the background image is used as the basis for color extraction. The process of selection is described below:
+As you might have already guessed, the background image is used as the basis for color extraction. The process of colors selection is described below:
 
 1. Color Candidates
 
@@ -123,7 +123,7 @@ The first step is to extract a pallet of candidate colors from the background im
 
 2. Color Contrast Evaluation
 
-In order to select the most valid color combination, the author uses [Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23fdf6daff%3B%0D%0A%23dcbf87ff%3B%0D%0A%23dcb36fff%3B%0D%0A%23ac8144ff%3B%0D%0A%23744b1eff%3B%0D%0A%23704116ff%3B%0D%0A%236b350fff%3B%0D%0A%23210e03ff%3B%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to achieve the result. The figure below shows the result of the evaulation[^2].
+In order to select the most valid color combination, the author uses [Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23fdf6daff%3B%0D%0A%23dcbf87ff%3B%0D%0A%23dcb36fff%3B%0D%0A%23ac8144ff%3B%0D%0A%23744b1eff%3B%0D%0A%23704116ff%3B%0D%0A%236b350fff%3B%0D%0A%23210e03ff%3B%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to achieve the result. The figure below shows the result of the evaulation [^2].
 
 [^2]: The author add the black color (#000000) to the contrast evaluation to account for the color of the text (the bank ink).
 
@@ -131,11 +131,11 @@ In order to select the most valid color combination, the author uses [Contrast G
 
 3. Color Selection
 
-The selection of the color is choosen based on the contrast result. The author choose to select the most reliable result that is going with Cornsilk for font, border lines and some text, Licorice for the footer background, and finally black for the reset of the text.
+The selection of the color is choosen based on the contrast result. The author chooses to select the most reliable result that is going with Cornsilk for font and border lines, Licorice for the footer background, and finally black for the reset of the texts.
 
 ##### 2.4.2.2 Fonts
 
-Since the intention is to use the a handwriting font style to foster the historical characteristic of the game, the author selects Salsa font. [Google fonts](https://fonts.google.com/specimen/Salsa?query=Salsa) is used to find the aforementioned font and import it to the style sheet.
+Since the intention is to use a handwriting font style to foster the historical characteristic of the game, the author selects Salsa font. [Google fonts](https://fonts.google.com/specimen/Salsa?query=Salsa) is used to find the aforementioned font and import it to the style sheet.
 
 #### 2.4.3. Game Logic
 
@@ -149,11 +149,17 @@ The process begins with reviewing the Wireframes to extract the following inform
 
 The author then combins these basic constracts with the general logic of the game to create a step wise explanation as to how the code should be constructed.
 
-To some extend, the draft of the game logic converges reasonably with implemented code. The major disruption happens when the author introduces the modal reset message in the later stages of the execution phase (initially the plan is to go with confirm method). This is considered as one of the majors lessens-learned from this project.
+To some extend, the draft of the game logic converges reasonably with the implemented code. The major disruption happens when the author introduces the modal reset message in the later stages of the execution phase (initially the plan is to go with confirm method). The introduction of the modal reset message has negatively impacted the quality of the code along the following dimensions:
+
+- Clean Code quality
+- Significant increase in the number of global variables
+- Time
+
+This is considered as one of the majors lessens-learned from this project.
 
 ### 2.5. Execution
 
-This section is devoted to describing the execution phase of the project. The section starts with listing the technologies used to develop the website. Then it presents the result of conducted tests using different test tools. Another subsection is included to explains some of the bugs found during the execution phase. This subsection also presents some of the issues that are identified which deserve some explanations. The section then concludes with a brief deployment, cloning, forking procedures.
+This section is devoted to describing the fourth phase of the development process, that is the execution phase. The section starts with listing the technologies used to develop the website. Then it presents the result of conducted tests. Another subsection is included to explain some of the bugs found during the execution phase. This subsection also presents some of the issues that are identified which deserve some explanations. The section then concludes with a brief deployment, cloning, forking procedures.
 
 #### 2.5.1. Technologies Used
 
@@ -220,7 +226,7 @@ Such scenario happens when both players decide to break the basic principle of t
 
 As it can be seen from the screenshots above, the issue happens when the same character occupies two diagonals or one vertical and one horizontal. Such situation can only happen when both players decide not to compete. It happens when the first player chooses either the first spot or the second spot. Then the players take turns choosing only the outer spots sequentially. The last empty spot will be the one in the middle. That is exactly the one the completes either the two diagonals and one vertical and one horizontal. Try it yourself.
 
-## 3. Deployment, Clone and Fork Procedures
+## 2.5.4. Deployment, Clone and Fork Procedures
 
 The following procedure is implemented for deployment:
 
@@ -259,27 +265,27 @@ For any person interested to work on the source code of this project, here is th
 8. Add a discription if needed
 9. Click create fork 
 
-## 4. Features
+## 3. Features
 
 This section summarizes the final look of the game website. It discusses each part of the website and provides some colors to its purpose.
 
-### 4.1. Header
+### 3.1. Header
 
 This first part of the game website is the header. The header presents the name of the game in black font. See the figure below:
 
 ![The header of the website](documentation/images/header.png)
 
-### 4.2. Main
+### 3.2. Main
 
 The main contains three parts. Each part contains specific functionality trigged either directly by the user or by an event resulted from the user previous action.
 
-#### 4.2.1. The Setup Board
+#### 3.2.1. The Setup Board
 
 The setup board is divided into two parts. The dashboard and the players characters. See the screenshot below.
 
 ![Player character buttons](documentation/images/setupboard.png)
 
- ##### 4.2.1.1  The Dashboard
+ ##### 3.2.1.1  The Dashboard
 
  The dashboard is responsible for leading the user as to what needs to be done or where the game is in any moment during the game play. For example, when the website is loaded, the dashboard informs the user that choosing a character is needed to start the game. See the screen shot below.
 
@@ -295,55 +301,55 @@ If either of the players wins or a tie event happens, the dashboard will announc
 
 ![Dash Board Status if the game is tie](documentation/images/setupboard-dashboard-four.png)
 
- ##### 4.2.1.2  The Players Characters
+ ##### 3.2.1.2  The Players Characters
 
  The second part consists of two buttons each represents a character to be chosen by the users. Once a user pick one of the characters the second user will automatically be assigned the other character. A screenshot is included her to show the first part of the setup board.
 
  ![Players containers contains two buttons each with either X or O character](documentation/images/setupboard-playerscontainer.png)
 
-#### 4.2.2. The Game Board
+#### 3.2.2. The Game Board
 The game board contains the nine spots that shall be populated by the users assigned characters. See the screen shot below.
 
  ![The game board showing the nine spots](documentation/images/gameboard.png)
 
-#### 4.2.3. The Score Board
+#### 3.2.3. The Score Board
 
 The score board consists of three parts. The first part is responsible for showing the score of each player. The second part provides a way for the user to reset the game or reset the round. The third part contains a hidden message that popups only when user wants to reset the game. The latter part is added at later stages of the development. Hence, it does not appear in the Wireframes subsection. See the screen below, the third part is hidden here.
 
  ![The score board with its two components](documentation/images/scoreboard.png)
 
-##### 4.2.3.1 Scores
+##### 3.2.3.1 Scores
 
 Each player has its own counter to count the number of rounds a user won. This information is provided in the scores part of the score board. See the screen shot below.
 
  ![The score counters of the scores part of the score board](documentation/images/scoreboard-scores.png)
 
-##### 4.2.3.2 Rest Buttons
+##### 3.2.3.2 Rest Buttons
 
 The second part consists of two buttons. One provides the user with the possibility of resetting the game, while the other provides the players with the possibility of resetting the round without setting back the total score to zeros. See the screen shot below.
 
  ![The round and the resetting buttons](documentation/images/scoreboard-resetbuttons.png)
 
-##### 4.2.3.3 The Reset Message
+##### 3.2.3.3 The Reset Message
 
 The final part of the score board is the reset message. This message only appears when either of the players presses the game reset buttons. It is there to make sure no player is accidently press the game reset. See the screen shot below.
 
  ![The reset message](documentation/images/scoreboard-resetmessage.png)
 
-### 4.3. Footer
+### 3.3. Footer
 
 The last part of the website body is the footer. It contains two components. The first component provides links to the author’s online pages. It is put there to facilitate a communication media for those how are interested to connect with the author to exchange ideas, learn from each other or collaborate on future projects.
 The second component is a disclaimer stating the context within which the author develops this website. See the screen shot below.
 
  ![The footer of the website](documentation/images/footer.png)
 
- ### 4.4. Favicon
+ ### 3.4. Favicon
 
  The last part of the page is the Favicon. The figure below shows the favicon. The original image is a screenshot of two spots filled with players characters. Then the image is converted into a favicon by using [Favicon Generator](https://www.favicon.cc/?).
 
    ![The image of the favicon](documentation/images/favi.png)
 
-## 5 Future Work
+## 4 Future Work
 
 The author suggests the following list to be considered as future work.
 
@@ -353,9 +359,9 @@ The author suggests the following list to be considered as future work.
 5. Make the game possible to be played with the computer
 6. Make the game possible to be played remotly online between two players
 
-## 6 Credits
+## 5 Credits
 
-### 6.1 References
+### 5.1 References
 
 1. Code institute Learning Materials.
 2. Code Institute Walkthrough projec: Loving Math.
@@ -370,7 +376,7 @@ Academind
 9. [W3 School](https://www.w3schools.com/css/).
 10. [Wikipedia](https://en.wikipedia.org).
 
-### 6.2. Content and Tools
+### 5.2. Content and Tools
 
 1. The Background image is generated by [ChatGPT](https://chat.openai.com/auth/login?sso)
 2. The icons of the footer is downloaded from Font Awesome, [Font Awesome](https://fontawesome.com/).
@@ -385,7 +391,7 @@ Academind
 11. [Am I Responsive?](https://ui.dev/amiresponsive).
 
 
-### 6.3. Acknowledgement
+### 5.3. Acknowledgement
 
 I would like to express my gratitude to Mr. David Bowers for his outstanding mentorship. His inputs, feedback and guidance are invaluable. I am looking forward to continuing working with him on the upcoming projects.
 I would also like to pass my sincere appreciations to all CI students who have reviewed my project and saved some of their valuable time to write me their views and improvement suggestions. The same sentiment goes to all my friends and family who have provided their suppot and reviewed the project and for provisioning their feedback on the website.
