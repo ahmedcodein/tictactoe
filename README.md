@@ -67,7 +67,7 @@ This section describes the fourth phase, the planning phase, of the project. The
 
 These sub-phases is desicribed in the following subsections. One can think of the subsequent discriptions as a detailed path as to how each of the 5 requirements presented in the previous section is to be trasformed into a tangable object, i.e the game website.
 
-==During the execution phase of this project, the author deviated a bit from the presented plan in this section. The pivot is related to converting the confirm method when a user presses the reset button to a modal dialog box. As such, the following subsections does not cover this issue since it was not part of the planning. However, the author provides some details on this in the feature section of this report==.  
+**During the execution phase of this project, the author deviated a bit from the presented plan in this section. The pivot is related to converting the confirm method when a user presses the reset button to a modal dialog box. As such, the following subsections does not cover this issue since it was not part of the planning. However, the author provides some details on this in the feature section of this report**.  
 
 #### 2.4.1. Wireframes
 
@@ -125,7 +125,7 @@ The first step is to extract a pallet of candidate colors from the background im
 
 In order to select the most valid color combination, the author uses [Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23fdf6daff%3B%0D%0A%23dcbf87ff%3B%0D%0A%23dcb36fff%3B%0D%0A%23ac8144ff%3B%0D%0A%23744b1eff%3B%0D%0A%23704116ff%3B%0D%0A%236b350fff%3B%0D%0A%23210e03ff%3B%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to achieve the result. The figure below shows the result of the evaulation [^2].
 
-[^2]: The author add the black color (#000000) to the contrast evaluation to account for the color of the text (the bank ink).
+[^2]: The author adds the black color (#000000) to the contrast evaluation to account for the color of the text (the bank ink).
 
 ![Contrast Evaluation Resutl](documentation/images/contrast-grid.png)
 
@@ -149,13 +149,13 @@ The process begins with reviewing the Wireframes to extract the following inform
 
 The author then combins these basic constracts with the general logic of the game to create a step wise explanation as to how the code should be constructed.
 
-To some extend, the draft of the game logic converges reasonably with the implemented code. The major disruption happens when the author introduces the modal reset message in the later stages of the execution phase (initially the plan is to go with confirm method). The introduction of the modal reset message has negatively impacted the quality of the code along the following dimensions:
+**To some extend, the draft of the game logic converges reasonably with the first implemented code. The major disruption happens when the author introduces the modal reset message in the later stages of the execution phase (initially the plan is to go with confirm method). The introduction of the modal reset message has negatively impacted the quality of the code along the following dimensions:**
 
-- Clean Code quality
-- Significant increase in the number of global variables
-- Time
+- **Clean Code quality**
+- **Significant increase in the number of global variables**
+- **Time**
 
-This is considered as one of the majors lessens-learned from this project.
+**This is considered as one of the majors lessens-learned from this project.**
 
 ### 2.5. Execution
 
