@@ -2,52 +2,57 @@
 
 ## 1. Introduction
 
-Tic Tac Toe game is an ancient board game. According to Wikipedia, the game goes back to 1300 BC [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe). The game board is divided into 3-by-3 boxes. The game is designed to be played by two persons. Each person is designated either of two characters/symbols to play with, conventionally, these are O and X. The players then take turns by placing the symbols in one of the nine boxes. Either player is able to place the player's designated symbol on three boxes arranged horizontally, vertically or diagonally is considered the game winner. In case none of the players is unable to do so, the game is then a tie.
+Tic Tac Toe game is an ancient board game. According to Wikipedia, the game goes back to 1300 BC [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe). The game board is divided into 3-by-3 boxes. The game is designed to be played by two persons. Each person is designated either of two characters/symbols to play with. Conventionally, these are O and X. The players then take turns by placing the symbols in one of the nine boxes. Either player is able to place the player's designated symbol on three boxes arranged horizontally, vertically or diagonally is considered the game winner. In case where none of the players is able to do so, the game is then a tie.
 
 ![Introduction image, the website presentation on different view screens](documentation/images/introduction.png)
 
 ## 2. Development Process
 
-The process followed by the author consists of five phases. These phases are presented below with a detailed account is presented in the subsequent sections.
+The process followed by the author consists of five phases. These phases are presented below with a detailed account of each phase is presented in the subsequent sections.
 
 ### 2.1.Research and Selection Criteria
 
-In the research phase the author has conducted a brief search on easy to implement games for the purpose of learning HTML, CSS and JavaScript together. Many resources can be found, the author however settled on the following [Article](https://www.codingnepalweb.com/best-javascript-games-for-beginners/). 
-Among the 10 candidates presented in the article, the author chooses to move with Tic Tac Toe game due to three main reasons:
+In the research phase the author has conducted a brief search on easy to implement games for the purpose of learning how HTML, CSS and JavaScript work together to build intractive websites. Many resources can be found. The author, however, settled on the following [Article](https://www.codingnepalweb.com/best-javascript-games-for-beginners/) to choose the project candidate from. 
+Among the 10 candidates presented in the article, the author chooses to move with Tic Tac Toe game. Three main reasons behind the author choice:
 1.	Simple User Interface with minimum graphics
 2.	Average logic complexity
-3.	Good enough of interactions between the DOM and the JavaScript to become familiar with the concept of DOM manipulation.
+3.	Good amount of interactions between the DOM and the JavaScript. This make it an ideal playing ground for the author to become familiar with the concept of DOM manipulation.
 
 ### 2.2. Project Objective
 
-From the author's perspective, the main goal of developing this game is to become familiar with JavaScript programming and its interactions with HTML DOM.
+From the author's perspective, the main goal of developing this game is to become familiar with JavaScript programming and its interactions with HTML DOM and the CSS.
 
 #### 2.2.1. Website Owner Objectives
 
-The owner objective is to build an online game that is easy to understand, interface with and play combined with some sort of challenge presented by score accumulation.
+The owner objective is to build an online game that is easy for the user to:
+
+- Understand
+- Interface with 
+
+Finally the game should also be combined with some sort of challenge presented by score accumulation.
 
 #### 2.2.2. Website Visitor Objectives
 
-User objective converges with the site owner's in the sense of finding an online game that is easy to interact with in addition to the provision of some challenge while playing the game by accumulating score when played with a friend. 
+User objective converges with the site owner's in the sense of finding an online game that is easy to interact with. In addition, teh game is cabable of provisioning some challenge while playing the game. This can be done by simply accumulating a score when played with a friend. 
 
 ### 2.3. Website Requirements
 
 This section describes the general requirements of the game. The author constructs these requirements by translating the aspects briefly reviewed in the previous sections. Subsequently, the author constructs five general design requirements, summarized below:
 
-1. The game design must signal some ancient historical characteristics to reflects a general feeling about it origin
+1. The game design must signal some ancient characteristics to reflect a general feeling about the game origin.
 2. The game design consists of three major parts: 
     - Two players each has a symbole of either X or O.
-    - A 3-x-3 boxes represents the game board
+    - A 3-x-3 boxes represent the game board
     - A players' score board to track the records of winning
-3. The game design must be simple and easy to navigate as much as possible.
+3. As much as possible, the game design must be simple and easy to navigate.
 4. The game design must record the score of winning and present it to the user
 5. A section in the game page that leads to the author online pages[^1]
 
-[^1]: Although, the last design requirement is not related to the owner’s or visitor’s objective nor to the game design requirements, it is related to sole purpose of pursuing this course, see Project Objective section. That is to connect with people who share the same interests with author in order to exchange ideas, pursue future project collaborations or simply get feedback for improvement on the author’s work.
+[^1]: Although, the last design requirement is not related to the owner’s or visitor’s objectives nor to the game design requirements, it is related to the sole purpose of pursuing this course, see Project Objective section. That is to connect with people who share the same interests with the author. In order to learn from other people, exchange ideas, pursue future project collaborations or simply get feedback for improvement on the author’s work.
 
 ### 2.4. Planning
 
-This section intents to describe the planning phase of the project. The planning phase consisits of three sub-phases:
+This section describes the planning phase of the project. The planning phase consisits of three sub-phases:
 - Wireframes/HTML structure
 - Styling
 - Game Logic
@@ -62,7 +67,7 @@ This section is designed to provide a high-level overview about the early design
 
 - What is the preliminary layout of the website?
 - What is the preliminary structure of the HTML page?
-- What is the preliminary naming used for HTML elements IDs and Classes?
+- What is the preliminary naming used for HTML elements' IDs and Classes?
 
 ##### 2.4.1.1 Preliminary layout of the website
 
@@ -78,25 +83,25 @@ Using Balsamiq Wireframes, the Game page is presented in three different viewing
 
 ##### 2.4.1.2 Preliminary structure of the HTML page
 
-Following the wireframes' layout presented on section 2.3.3., the high-level html structure is constructed. The structure is shown in the image below. 
+Following the wireframes' layout presented on above subsection, the high-level html structure is constructed. The structure is shown in the image below. 
 
 ![Website's HTML structure](documentation/images/html-structure.png)
 
 As shown in the figure above, the HTML structure is divided into three parts:
 
 - Header: The header contains the title of the game.
-- Main: The main contains three sections, these are: Setup Board, Game Board and Score board.
-- Footer: The footer contains two types of information; these are links to the author's LinkedIn and GitHub websites.
+- Main: The main contains three sections, Setup Board, Game Board and Score board.
+- Footer: The footer contains two types of information; these are; links to the author's LinkedIn and GitHub websites and second type is general disclaimer.
 
 ##### 2.4.1.3. Preliminary naming used for HTML elements IDs and Classes
 
-The following image is devoted to give additional resolution to the previous subsection by elaborating further on the elements contained in the body of the HTML page. In addition, the image provides further color on the IDs and Classes naming strategy that the author intends to implement to develop the HTML page and subsequently will be used for the page styling and to manipulate the page by the JavaScript code.
+The following screenshot is devoted to give additional resolution to the previous subsections. this is done by elaborating more on the elements contained in the body of the HTML page. In addition, the screenshot provides further color on the IDs and Classes naming strategy that the author intends to implement to develop the HTML page. And subsequently, these namings will be used for the page styling and to manipulate the page by the JavaScript code.
 
 ![Website's HTML structure](documentation/images/ids-classes-naming.png)
 
 #### 2.4.2. Styling
 
-One of the website requements is to present the game with an ancient charactertic touch. This is to refelct the history of the game origin. Towards achieving this, the author opts to present the game as it is played on an old paper or leather scroll background. To constuct such background, the author uses [ChatGPT](https://chat.openai.com/auth/login?sso) to create the background. The players then use black ink to handright the game board and later the score as the game goes.
+One of the website requements is to present the game with an ancient charactertic touch. This is to refelct the history of the game origin. Towards achieving this, the author opts to present the game as it is played on an old paper or leather scroll background. To constuct such background, the author uses [ChatGPT](https://chat.openai.com/auth/login?sso) to create the background. The players then use black ink to handright the game board with symboles and later the score as the game goes.
 
 ##### 2.4.2.1 Color
 
@@ -118,11 +123,11 @@ In order to select the most valid color combination, the author uses [Contrast G
 
 3. Color Selection
 
-The selection of the color is choosen based on the contrast result. The author choose to select the most reliable result that is going with Cornsilk for font and border lines and Licorice for the footer background.
+The selection of the color is choosen based on the contrast result. The author choose to select the most reliable result that is going with Cornsilk for font, border lines and some text, Licorice for the footer background, and finally black for the reset of the text.
 
 ##### 2.4.2.2 Fonts
 
-Since the intention is to use the a handwriting font style to foster the historical characteristic feeling of the game. The author selects Salsa font. [Google fonts](https://fonts.google.com/specimen/Salsa?query=Salsa) is used to find the aforementioned font and import it to the style sheet.
+Since the intention is to use the a handwriting font style to foster the historical characteristic of the game, the author selects Salsa font. [Google fonts](https://fonts.google.com/specimen/Salsa?query=Salsa) is used to find the aforementioned font and import it to the style sheet.
 
 #### 2.4.3. Game Logic
 
@@ -136,9 +141,11 @@ The process begins with reviewing the Wireframes to extract the following inform
 
 The author then combins these basic constracts with the general logic of the game to create a step wise explanation as to how the code should be constructed.
 
+To some extend, the draft of the game logic converges reasonably with implemented code. The major disruption happens when the author introduces the modal reset message in the later stages of the execution phase (initially the plan is to go with confirm method). This is considered as one of the majors lessens-learned from this project.
+
 ### 2.5. Execution
 
-This section is devoted to describing the execution phase of the project. The section starts with listing the technologies used to develop the website. Then it presents the result of conducted tests using different test tools. Another subsection is included to explains some of the bugs found during the execution phase. This subsection also presents some of the issues that are identified which deserve some explanations. The section then concludes with a brief deployment procedure followed by the author to deploy the website.  
+This section is devoted to describing the execution phase of the project. The section starts with listing the technologies used to develop the website. Then it presents the result of conducted tests using different test tools. Another subsection is included to explains some of the bugs found during the execution phase. This subsection also presents some of the issues that are identified which deserve some explanations. The section then concludes with a brief deployment, cloning, forking procedures.
 
 #### 2.5.1. Technologies Used
 
@@ -154,7 +161,7 @@ The list of techologies used to develop the Tic Tac Toe game of this project are
 
 #### 2.5.2 Test Resutls
 
-The test results is summrized here in the table below. For detailed disscusions of the test please visit the [test.md](test.md) file. 
+The test results is summrized in the table below. For detailed disscusions of the test please visit the [test.md](test.md) file. 
 
 | Test ID No. | Test Name | Test Result | Test Comment|
 | ----------- |---------- |------------ |------------ |
@@ -162,7 +169,7 @@ The test results is summrized here in the table below. For detailed disscusions 
 | 2 | Web Accessibility Evaluation (Wave) Tool | No Errors/Warnings | NO Comment|
 | 3 | W3C Markup Validation Service | No Errors/Warnings | No Comment|
 | 4 | W3C CSS Validation Service | No Errors/Warnings | No Comment|
-| 5 | JSHint | Unresolved Warning | "Functions declared within loops referencing an outer scoped variable" is not resolved due to time contraint|
+| 5 | JSHint | No Errors/Warnings | No Comment|
 | 6 | Device Test | No Errors/Warnings | Test conducted on Mobiles, Laptops and Desktop, Windows 10 and Android and where applicable: landscape and portrait modes|
 | 7 | Browser Test | No Errors/Warnings | Google Chrome, Firefox and Edge|
 
@@ -172,41 +179,42 @@ This section provides a detailed account of most prominent bugs that are success
 
 ##### 2.5.3.1. Fixed Bugs
 
-The following bugs are resolved. the list of bugs presented in accordance to their time of occurrence over the course of the game development. The list does not cover the complete bugs the author encountered during the development but rather the most prominent ones.
+The following bugs are resolved. the list of bugs presented in accordance to their time of occurrence over the course of the game development. The list does not cover the complete bugs encountered during the development but rather the most prominent ones.
 
-Important Note: Couple of these bugs is resolved by inserting the function in question into ChatGPT console. The ChatGPT then provides the resolution.
+Important Note: Couple of these bugs is resolved by inserting the function in question into ChatGPT console. The ChatGPT then provides the resolution, see the comment columns for more information.
 
 | Bug ID No. | Bug Position | Bug Discription | Bug Solution | Comment|
 | -----------| ----------- |---------- |------------ |------------ |
 |1| startTheGame function | Buttons are not mutually Exclusive | Introducing a gating mechanism by invoking a variable that takes true and false values to deactivating the other button | The solution is suggested by ChatGPt|
-|2| fillTheSpots function | removeEventListener does not work properly leading to double readings of the playingsSpots array | Declare an anonymous function as variable. The declaration must happen outside handler of the eventlistener. Store the result of listening in an array, when remove the event listener use the stored array as the eventHandler of removeEvent listener as apposed to the declared variable| The author declares the anonymous function, but the problem persists, the reset of the solution is suggested by ChatGPt| 
-|3| gameResultEvaluation | The outputs of the function is always either true or undifined preventing the author from extracting draw result | Intreducing double if condition, winner-not-found and drawCondition | |
-|4| startTheGame function | removeEventListener does not work properly leading to double readings of the playingsSpots array | Declare an anonymous function as variable. The declaration must happen outside handler of the eventlistener. Store the result of listening in an array, when remove the event listener use the stored array as the eventHandler of removeEvent listener as apposed to the declared variable| The solution is inspired by the solution provided by ChatGPT presetned in Bug Id No. 2| 
+|2| fillTheSpots function | removeEventListener does not work properly leading to double readings of the playingsSpots array | Declare an anonymous function as variable. The declaration must happen outside the handler of the eventlistener. Store the result of listening in an array, when remove the event listener use the stored array as the eventHandler of removeEvent listener as apposed to the declared variable| The author declares the anonymous function, but the problem persists, the rest of the solution is suggested by ChatGPt| 
+|3| gameResultEvaluation | The outputs of the function are always either true or undifined. This prevents the author from extracting draw result | Inroducing two if conditions, winner-not-found and drawCondition | |
+|4| startTheGame function | removeEventListener does not work properly leading to double readings of the playingsSpots array | Declare an anonymous function as variable. The declaration must happen outside the handler of the eventlistener. Store the result of listening in an array, when remove the event listener use the stored array as the eventHandler of removeEvent listener as apposed to the declared variable| The solution is inspired by the solution provided by ChatGPT presetned in Bug Id No. 2| 
 |5| resetRoundFunction | For the first game load and once a user clicks the reset button, an error appears complaining about listenedToCharacter is not defined | Deactivating the reset button if the listendToCharacter is not an object | |
 |6|  resetRoundFunction | similar to bug no. 5 | similar to bug no. 5 | |
 |7| returnToGame | although the function performs the return as expected, multiple game senarios are not covered, e.g. what if no player is selected | Chain of multiple if statements are introduced to account for each senario | |
-|7| returnToGame | The game does not allow the user to select a player to start the new round if no reset is selected and The game does not allow the user to continue if the no is pressed in the middle of the round. The user has to start new round to proceed | imporove the logic of the multiple if statements inside the function | |
+|8| returnToGame | The game does not allow the user to select a player to start the new round if no reset is selected. The game does not allow the user to continue if the no is pressed in the middle of the round. The user has to start new round to proceed | improve the logic of the multiple if statements inside the function | |
 
 ##### 2.5.3.2. Unfixed Bugs
 
-No bugs are observed after multiple tests and bug fixes. However, the author observes peculiar game scenarios. Although the author does not consider these as bug, he decides to mention here and give some explanation. 
-The reason the author believes this is not a bug, is because the scenario is not based on a realistic players' choices. Hence, it should not not occur in real game competing setting.
+No bugs are observed after multiple bug fixes and tests. However, the author observes peculiar game scenarios. Although the author does not consider these as bug, he decides to mention them here and give some explanation.
+
+Now you might ask, why the author does not consider this as a bug?The reason the author believes this is not a bug, is because the scenario is not based on a realistic players' choices. Hence, it should not occur in real game competing setting.
 
 1. Peculiar Round Result scenarios
 
 There are two scenarios where the game logic doubls the score of the win. In other words, instead of giving the winner one point, it gives the winner 2 points. 
-Such scenario happens when both players decide to break the basic principle of the game rule. That is neither playing for winning nor for tie. Below two screenshots show these scenarios and an explanation as to how this might happen.
+Such scenario happens when both players decide to break the basic principle of the game rule. That is neither of them is playing for winning nor for tie. Below two screenshots show these scenarios and an explanation as to how this might happen.
 
 ![Peculiar Round Result first scenario](documentation/images/peculiar-game-result-scenario-one.png)
 
 
 ![Peculiar Round Result second scenario](documentation/images/peculiar-game-result-scenario-two.png)
 
-As it can be seen from the screenshots above, the issue happens when the same character occupies two diagonals. Such situation can only happen when both players decide not to compete. It happens when the first player chooses either the first spot or the second spot. Then the players take turns choosing only the outer spots sequentially. The last empty spot will be the one in the middle. That is exactly the one the completes either the two diagonals and one vertical and one horizontal. Try it yourself.
+As it can be seen from the screenshots above, the issue happens when the same character occupies two diagonals or one vertical and one horizontal. Such situation can only happen when both players decide not to compete. It happens when the first player chooses either the first spot or the second spot. Then the players take turns choosing only the outer spots sequentially. The last empty spot will be the one in the middle. That is exactly the one the completes either the two diagonals and one vertical and one horizontal. Try it yourself.
 
 ## 4. Deployment, Clone and Fork Procedures
 
-The author follows the following procedure for deployment:
+The following procedure is implemented for deployment:
 
 1. In the project repository go to settings
 2. Under Code and Automation, go to pages
@@ -215,7 +223,7 @@ The author follows the following procedure for deployment:
 5. Now select save
 6. Wait for couple of minutes to the website to go online
 
-The author follows the following procedure to clone from the GiTHub repo into Gitpod:
+The following procedure is implemented to clone from the GiTHub repo into Gitpod:
 
 1. Go to your repositories 
 2. Click on the new created project repository
@@ -231,7 +239,7 @@ The author follows the following procedure to clone from the GiTHub repo into Gi
 13. Paste the url in input window
 13. Click continue
 
-For any person who is interest to work on the source code of this project, here is the procedure that needs to be followed to make a fork.
+For any person interested to work on the source code of this project, here is the procedure that needs to be followed to make a fork.
 
 1. Go to ahmedcodein repositories
 2. Click on TicTacToc repo
@@ -249,13 +257,14 @@ This section summarizes the final look of the game website. It discusses each pa
 
 ### 5.1. Header
 
-This first part of the game website is the header. The header presents with black font the name of the game. See the figure below:
+This first part of the game website is the header. The header presents the name of the game in black font. See the figure below:
 
 ![The header of the website](documentation/images/header.png)
 
-### 5.2. Main Content
+### 5.2. Main
 
 The main contains three parts. Each part contains specific functionality trigged either directly by the user or by an event resulted from the user previous action.
+
 #### 5.2.1. The Setup Board
 
 The setup board is divided into two parts. The dashboard and the players characters. See the screenshot below.
@@ -268,11 +277,11 @@ The setup board is divided into two parts. The dashboard and the players charact
 
  ![Dash Board Status before the game starts ](documentation/images/setupboard-dashboard-one.png)
 
- Once the game starts the dashboard present whose turn and continue to do so until the round is concluded. See the screenshot below.
+ Once the game starts the dashboard present whose turn is and continue to do so until the round is concluded. See the screenshot below.
 
   ![Dash Board Status during the game ](documentation/images/setupboard-dashboard-two.png)
 
-If either of the players wins or a tie event happens, the dashboard will present the announce the game final status. See the two screenshots below.
+If either of the players wins or a tie event happens, the dashboard will announce the game final status. See the two screenshots below.
 
 ![Dash Board Status if one of the players wins](documentation/images/setupboard-dashboard-three.png)
 
@@ -280,18 +289,18 @@ If either of the players wins or a tie event happens, the dashboard will present
 
  ##### 5.2.1.2  The Players Characters
 
- The second part consists of two buttons each represents a character to be chosen by the users. Once a user pick one of the characters the second user will automatically assign the other character. A screenshot is included her to show the first part of the setup board.
+ The second part consists of two buttons each represents a character to be chosen by the users. Once a user pick one of the characters the second user will automatically be assigned the other character. A screenshot is included her to show the first part of the setup board.
 
  ![Players containers contains two buttons each with either X or O character](documentation/images/setupboard-playerscontainer.png)
 
 #### 5.2.2. The Game Board
-The game board contains the nine spots that shall be populated by the users with their assigned characters. See the screen shot below.
+The game board contains the nine spots that shall be populated by the users assigned characters. See the screen shot below.
 
  ![The game board showing the nine spots](documentation/images/gameboard.png)
 
 #### 5.2.3. The Score Board
 
-The score board consists of three parts. The first part is responsible for showing the score of each player. The second part provides a way for the user to reset the game or the round. The third part contains a hidden message that popups only when user wants to reset the game. See the screen below, the third part is hidden here.
+The score board consists of three parts. The first part is responsible for showing the score of each player. The second part provides a way for the user to reset the game or reset the round. The third part contains a hidden message that popups only when user wants to reset the game. The latter part is added at later stages of the development. Hence, it does not appear in the Wireframes subsection. See the screen below, the third part is hidden here.
 
  ![The score board with its two components](documentation/images/scoreboard.png)
 
@@ -303,19 +312,19 @@ Each player has its own counter to count the number of rounds a user won. This i
 
 ##### 5.2.3.2 Rest Buttons
 
-The second part consists of two buttons. One provides the user with possibility of resetting the game, while the other provides the players with the possibility of resetting the round without setting back the total score to zeros. See the screen shot below.
+The second part consists of two buttons. One provides the user with the possibility of resetting the game, while the other provides the players with the possibility of resetting the round without setting back the total score to zeros. See the screen shot below.
 
  ![The round and the resetting buttons](documentation/images/scoreboard-resetbuttons.png)
 
 ##### 5.2.3.3 The Reset Message
 
-The final part of the score board is the reset message. This message only appears when either of the players press the game reset buttons. It is there to make sure no player is accidently press the game reset. See the screen shot below.
+The final part of the score board is the reset message. This message only appears when either of the players presses the game reset buttons. It is there to make sure no player is accidently press the game reset. See the screen shot below.
 
  ![The reset message](documentation/images/scoreboard-resetmessage.png)
 
 ### 5.3. Footer
 
-The last part of the website is the footer. It contains two components. The first component provides links to the author’s online pages. It is put there to facilitate a communication media for those how are interested to connect with the author to exchange ideas, collaborate on future project.
+The last part of the website body is the footer. It contains two components. The first component provides links to the author’s online pages. It is put there to facilitate a communication media for those how are interested to connect with the author to exchange ideas, learn from each other or collaborate on future projects.
 The second component is a disclaimer stating the context within which the author develops this website. See the screen shot below.
 
  ![The footer of the website](documentation/images/footer.png)
@@ -328,14 +337,13 @@ The second component is a disclaimer stating the context within which the author
 
 ## 6 Future Work
 
-The author suggests the following list to be considered as future work to be add to the game to make it more appealing to the user.
+The author suggests the following list to be considered as future work.
 
-1. Resolve all the unfixed bugs appear in the unfixed bug subsection
-2. Reduce the JavaScript code by removing any duplications. Then, combine the representative lines in standalone functions.
+1. Reduce the JavaScript code by removing any duplications. Then, combine the representative lines and include them in standalone functions.
 3. Some of the getElementsBy.. or getElementById.. are repeatedly used in multiple positions. Reducing them by declaring a dedicated variable can reduce the verbose in the code.
-4. Some of the CSS properties are repeatedly used in multiple rules. Defining them in single classes can reduce the verbose of the style sheet.
+4. Some of the CSS properties  with similar values are repeatedly used in multiple rules. Defining them in single classes can reduce the verbose of the style sheet.
 5. Make the game possible to be played with the computer
-6. Make the game possible to be played online between two players
+6. Make the game possible to be played remotly online between two players
 
 ## 7 Credits
 
@@ -372,5 +380,5 @@ Academind
 ### 7.3. Acknowledgement
 
 I would like to express my gratitude to Mr. David Bowers for his outstanding mentorship. His inputs, feedback and guidance are invaluable. I am looking forward to continuing working with him on the upcoming projects.
-I would like also to pass my sincere appreciations to all CI students who have reviewed my project and saved some of their valuable time to write me their views and improvement suggestions. The same sentiment goes to all my friends and family who have provided their suppot and reviewed the project and for the provision of their feedback on the website.
+I would also like to pass my sincere appreciations to all CI students who have reviewed my project and saved some of their valuable time to write me their views and improvement suggestions. The same sentiment goes to all my friends and family who have provided their suppot and reviewed the project and for provisioning their feedback on the website.
 
