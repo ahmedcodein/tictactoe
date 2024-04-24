@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (typeof listenedToCharacter !== "object") {
             return;
         } else if (resetMessageActivationCondition) {
-            return
+            return;
         } else {
             resetMessageActivation();
             for (let i = 0; i < Spots.length; i++) {
