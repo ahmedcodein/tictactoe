@@ -1,5 +1,5 @@
 // Allow the DOM to be loaded before starting the game
-// This line of code is adopted from JS workthrough project
+// This line of code is adopted from JS love math workthrough project of CI
 document.addEventListener("DOMContentLoaded", function () {
     // Declare inputs to the game, connect them to the DOM where appropriate
     let players = Array.from(document.getElementsByClassName('players'));
