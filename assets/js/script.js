@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function startTheGame(players, aPlayerClickedEvent, callback) {
         let userListenerStorage = []; // This line is introduced by the author after being inspired by GPT solution suggested in the fillInSpots function
         // Check which players buttons was fired
-        players.forEach(function(player){ // initially was for loop, this led to jshint warning. the solution to warning  is adapted from https://github.com/dnlbowers/blackjack
+        players.forEach(function (player) { // initially was for loop, this led to jshint warning. the solution to warning  is adapted from https://github.com/dnlbowers/blackjack
             let userListenerHandler = function () { // This line is introduced by the author after being inspired by GPT solution suggested in the fillInSpots function
                 if (!aPlayerClickedEvent) {
                     // Prevents any more player's selection
@@ -69,25 +69,26 @@ document.addEventListener("DOMContentLoaded", function () {
      */
     function fillTheSpots(count, firstPlayer, secondPlayer, Spots, playingSpots, callback) {
         let listenerStorage = []; // This line is suggested by ChatGPT
-        for (let i = 0; i < Spots.length; i++) {
+
+        Spots.forEach(function(spot, index){ // initially was for loop, this led to jshint warning. 
+            // The solution to the warning is in this case from https://www.freecodecamp.org/ (JavaScript forEach() – JS Array For Each Loop Example) 
+            // and from https://github.com/dnlbowers/blackjack
             let filledInSpotsListener = function () { // This line is suggested by ChatGPT
                 count++;
-
-                if (count % 2 === 0 && !playingSpots[i]) {
-                    Spots[i].innerText = `${firstPlayer}`;
-                    playingSpots[i] = firstPlayer;
+                if (count % 2 === 0 && !playingSpots[index]) {
+                    Spots[index].innerText = `${firstPlayer}`;
+                    playingSpots[index] = firstPlayer;
                     document.getElementById("dash-board").innerText = `It is ${secondPlayer}'s turn`;
-
-                } else if (count % 2 !== 0 && !playingSpots[i]) {
-                    Spots[i].innerText = `${secondPlayer}`;
-                    playingSpots[i] = secondPlayer;
+                } else if (count % 2 !== 0 && !playingSpots[index]) {
+                    Spots[index].innerText = `${secondPlayer}`;
+                    playingSpots[index] = secondPlayer;
                     document.getElementById("dash-board").innerText = `It is ${firstPlayer}'s turn`;
                 }
                 callback(playingSpots);
             };
-            Spots[i].addEventListener('click', filledInSpotsListener); // This line is suggested by ChatGPT
+            spot.addEventListener('click', filledInSpotsListener); // This line is suggested by ChatGPT
             listenerStorage.push(filledInSpotsListener); // This line is suggested by ChatGPT
-        }
+        });
         listenedToCharacter = listenerStorage; // This line is suggested by ChatGPT
     }
     /** This function evaluates after each new filled spot if the winning condition is satidfied.
@@ -175,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     /**This function activates the modal reset message if the user wants to reset the game */
     function resetMessageActivation() {
-        if (document.getElementById('counter-o') === 0 && document.getElementById('counter-x') === 0 ) {
+        if (document.getElementById('counter-o') === 0 && document.getElementById('counter-x') === 0) {
             return
         } else {
             resetMessage.style.display = 'block';
