@@ -182,7 +182,7 @@ The test results is summrized in the table below. For detailed disscusions of th
 | 1 | Google Lighthouse | No Errors/Warnings | Mobile and Desktop|
 | 2 | Web Accessibility Evaluation (Wave) Tool | No Errors/Warnings | NO Comment|
 | 3 | W3C Markup Validation Service | No Errors/Warnings | No Comment|
-| 4 | W3C CSS Validation Service | No Errors/Warnings | No Comment|
+| 4 | W3C CSS Validation Service | No Errors and One Warning | Warning message: Imported style sheets are not checked in direct input and file upload modes. This is related to google fonts imported font|
 | 5 | JSHint | No Errors/Warnings | No Comment|
 | 6 | Device Test | No Errors/Warnings | Test conducted on Mobiles, Laptops and Desktop, Windows 10 and Android and where applicable: landscape and portrait modes|
 | 7 | Browser Test | No Errors/Warnings | Google Chrome, Firefox and Edge|

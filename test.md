@@ -31,6 +31,8 @@ The result of W3C CSS Validation Service for the CSS file is shown below:
 
 ![W3C CSS Validation Service test resutl](documentation/images/css-w3c.png)
 
+ One Warning message is observed, the waringin is "Imported style sheets are not checked in direct input and file upload modes". This warning is related to google fonts imported font.
+
 ##### 1.5. JSHint
 
 The final JShint test resuloved is cleared with no errors or warnings. The discription below provide detailed status of the test result before and after the fix.
