@@ -378,8 +378,9 @@ The author suggests the following list to be considered as future work to be add
 Academind
 ](https://www.youtube.com/watch?v=o5ffh3KUaTM).
 7. David Bowers, BlackJack game, [BlackJack GitHub Repo](https://github.com/dnlbowers/blackjack).
-8. [W3 School](https://www.w3schools.com/css/).
-9. [Wikipedia](https://en.wikipedia.org).
+8. [JavaScript forEach() – JS Array For Each Loop Example by Joel Olawanle](https://www.freecodecamp.org/news/javascript-foreach-js-array-for-each-example/#:~:text=how%20they%20work.-,JavaScript%20forEach(),can%20be%20of%20any%20datatype.)
+9. [W3 School](https://www.w3schools.com/css/).
+10. [Wikipedia](https://en.wikipedia.org).
 
 ### 7.2. Content and Tools
 
